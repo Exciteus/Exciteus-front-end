@@ -1,11 +1,15 @@
 
-
+html {
+      overflow-x: hidden; 
+    overflow-y: scroll;
+    
+}
 
 body {
     letter-spacing: -0px;
     margin-top: 0;
      overflow-x: hidden; 
-    overflow-y: auto;
+    overflow-y: scroll;
     
     background-color: #1E0F47;
     font-family: "BebasNeue-Book";
