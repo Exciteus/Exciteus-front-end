@@ -1,6 +1,9 @@
 $(document).ready(function () {
+
+
     $('.drawer').drawer();
 
+    /*
     $(".event-item").click(function () {
 
         console.log("click");
@@ -11,6 +14,7 @@ $(document).ready(function () {
         console.log("click");
         window.location.href = "event.html";
     });
+    */
 
     window.onscroll = function () {
         myFunction()
@@ -33,37 +37,33 @@ $(document).ready(function () {
 
 
 
+    console.log("request");
+    var htmlstring;
+    var output = document.getElementById("events");
+
+    $.ajax({
+        type: 'GET',
+        crossOrigin: true,
+        url: "https://on-the-moment-dev.herokuapp.com/external/events/upcoming",
+
+        dataType: "json",
+        success: function (data) {
+            $.each(data, function (index, element) {
+                console.log(element.title);
+
+
+
+                nextstring = "<div class='event-item'><img class='icon' src='img/icons/unnamed.png' alt='undifined'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + element.startTime + "</h4><h5> promotion undif</h5></div></div></div>";
+
+                htmlstring += nextstring;
 
 
 
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            // Typical action to be performed when the document is ready:
-            document.getElementById("events").innerHTML = xhttp.responseText;
-            console.log("test");
-
-
-
-            $(".event-item").click(function (e) {
-                console.log("click");
-                var id = this.getAttribute('id');
-                console.log(id);
-               
-                window.location.href = "event.html?id="+ id;
             });
-            $(".event-item-highlight").click(function () {
-
-            });
-
-
+            output.innerHTML = htmlstring;
         }
-    };
-
-    xhttp.open("GET", "http://www.exciteus.live/getevents2.php", true);
-    xhttp.send();
-
+    });
 
 
 

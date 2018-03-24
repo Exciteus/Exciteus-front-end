@@ -5,11 +5,11 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
     <title>Exitus</title>
     <meta name="author" content="SitePoint">
 
-
+    <link rel="stylesheet" href="bebas-neue.css">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -29,9 +29,22 @@
 </head>
 
 <body class="drawer drawer--left">
+     <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+         <span class="close">&times;</span>
+            <div class="modal-content" id="modelinside">
+                
+                 <!-- 
+                <img id="story_image"src="img/story/story1.png">
+-->
+                
+            </div>
+
+        </div>
     <div class="header" id="myHeader">
 
-</div>
+    </div>
     <header role="banner">
         <button type="button" class="drawer-toggle drawer-hamburger">
             <span class="sr-only">toggle navigation</span>
@@ -48,6 +61,8 @@
         </nav>
     </header>
     <main>
+        <!-- The Modal -->
+       
         <div id="events">
             <!--
         <div class="event-head">
@@ -71,7 +86,7 @@
 -->
         </div>
 
-     
+
 
     </main>
 </body>
