@@ -32,4 +32,5 @@
         <plugin name="cordova-plugin-camera" source="npm" />
      
 
+        
     </widget>
