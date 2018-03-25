@@ -125,8 +125,7 @@
                         mediaType: Camera.MediaType.PICTURE,
                         encodingType: Camera.EncodingType.JPEG,
                         cameraDirection: Camera.Direction.BACK,
-                        targetWidth: 300,
-                        targetHeight: 400
+                       
                     };
                     
                     navigator.camera.getPicture(app.ftw, app.wtf, opts);
@@ -135,6 +134,7 @@
                     /*document.getElementById('msg').textContent = imgURI;*/
                     console.log("image uri:"+imgURI)
                     document.getElementById('photo').src = imgURI;
+                    
                     
                 },
                 wtf: function(msg){
