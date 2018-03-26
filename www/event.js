@@ -1,20 +1,136 @@
 $(document).ready(function () {
     $('.drawer').drawer();
+
+
     var id = getQueryStringValue('id');
+    var htmlstring = "";
+    var output = document.getElementById("events");
+    var urll = "https://on-the-moment-dev.herokuapp.com/external/events/" + id;
+    console.log(urll);
+    /*
     var story1;
     var story2;
     var story3;
     var n = 1;
     var clickcounter = 1;
+    */
 
+    /* get id from query string */
     function getQueryStringValue(key) {
         return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
     }
 
-    var xhttp = new XMLHttpRequest();
-    var xhttp_story = new XMLHttpRequest();
-    var xhttp_story2 = new XMLHttpRequest();
-    var xhttp_story3 = new XMLHttpRequest();
+
+
+    /* get data with json for detail screen */
+    $.ajax({
+        type: 'GET',
+        crossOrigin: true,
+        url: "https://on-the-moment-dev.herokuapp.com/external/events/" + id,
+
+        dataType: "json",
+        success: function (data) {
+            console.log(data.icon);
+            
+            /* old nextstring
+
+            nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
+            */
+            nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>undifined</h4></section><section class='description-twoo'><p>" + data.description + "</p><img src='undefined'></section>";
+
+            htmlstring += nextstring;
+            output.innerHTML = htmlstring;
+        }
+    });
+
+    /* unix time to human read time */
+    function timeConverter(UNIX_timestamp) {
+        // Months array
+        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        // Convert timestamp to milliseconds
+        var date = new Date(UNIX_timestamp * 1000);
+
+        // Year
+        var year = date.getFullYear();
+
+        // Month
+        var month = months_arr[date.getMonth()];
+
+        // Day
+        var day = date.getDate();
+
+        // Hours
+        var hours = date.getHours();
+
+        // Minutes
+        var minutes = "0" + date.getMinutes();
+
+
+
+        // Display date time in MM-dd-yyyy h:m:s format
+        var convdataTime = month + '-' + day + '-' + year + ' ' + hours + ':' + minutes.substr(-2);
+        return convdataTime;
+
+    }
+
+    function OnlyTimeConverter(UNIX_timestamp) {
+        var date = new Date(UNIX_timestamp * 1000);
+        var hours = date.getHours();
+
+        // Minutes
+        var minutes = "0" + date.getMinutes();
+        var conv = hours + ':' + minutes.substr(-2);
+        return conv;
+    }
+
+    function OnlyDateConverter(UNIX_timestamp) {
+        // Convert timestamp to milliseconds
+        var date = new Date(UNIX_timestamp * 1000);
+        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        // Year
+        var year = date.getFullYear();
+
+        // Month
+        var month = months_arr[date.getMonth()];
+
+        // Day
+        var day = date.getDate();
+
+        var conv = month + '-' + day + '-' + year;
+        return conv;
+    }
+
+    /* json return
+    
+    {  
+   "icon":"https://not-implemented-yet.png",
+   "title":"test-event-1-long",
+   "description":"Ths is a test event",
+   "place":{  
+      "name":"Alma 2",
+      "address":"Parkstraat"
+   },
+   "stories":{  
+      "images":[  
+
+      ]
+   },
+   "startTime":1522156780138
+}
+
+*/
+
+
+
+
+
+
+
+
+
+    /*
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             // Typical action to be performed when the document is ready:
@@ -132,6 +248,6 @@ $(document).ready(function () {
     xhttp.open("GET", "http://www.exciteus.live/getevent.php?id=" + id, true);
     xhttp.send();
 
-
+*/
 
 });

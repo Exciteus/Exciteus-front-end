@@ -41,6 +41,8 @@ $(document).ready(function () {
     var htmlstring = "";
     var output = document.getElementById("events");
 
+    
+    /* get data with json */
     $.ajax({
         type: 'GET',
         crossOrigin: true,
