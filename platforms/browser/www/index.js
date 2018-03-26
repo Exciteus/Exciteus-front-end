@@ -41,7 +41,7 @@ $(document).ready(function () {
     var htmlstring = "";
     var output = document.getElementById("events");
 
-    
+
     /* get data with json */
     $.ajax({
         type: 'GET',
@@ -72,13 +72,25 @@ $(document).ready(function () {
             });
             output.innerHTML = htmlstring;
 
-            $('.event-item').click(function() {
+
+            /* show page content -> stop preloader! */
+
+            setTimeout(
+                function () {
+                    $('#preloader').fadeOut('slow', function () {
+                        $(this).remove();
+                    });
+                }, 500);
+
+
+
+            $('.event-item').click(function () {
                 var myid = $(this).attr("id");
                 window.location.href = 'event.html?id=' + myid;
-                
+
             })
 
-            
+
         }
     });
 
