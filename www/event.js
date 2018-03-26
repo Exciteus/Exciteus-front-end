@@ -36,7 +36,7 @@ $(document).ready(function () {
 
             nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
             */
-            nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>undifined</h4></section><section class='description-twoo'><p>" + data.description + "</p><img src='undefined'></section>";
+            nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'"+data.promotion.name+"'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href="+data.detailLink+">more info...</a></p><img src='undefined'></section>";
 
             htmlstring += nextstring;
             output.innerHTML = htmlstring;
