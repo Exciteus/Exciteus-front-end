@@ -50,10 +50,11 @@
     <link rel="stylesheet" href="event.css">
 </head>
 
-<body class="drawer drawer--left image-overlay">
-    <img id="back-arrow" src="img/back-arrow.svg">
+<body class="drawer drawer--left image-overlay js">
+    <div id="preloader"></div>
     <!--
     <div id="confirm-image">
+        <img id="back-arrow" src="img/back-arrow.svg">
         <div id="send-image"><h7>Send image to event story's</h7></div>
         <img id="story-image" src="https://i.pinimg.com/736x/2e/79/51/2e7951e5019876bfe964810a50c65951--dinner-parties-celebrity-pictures.jpg">
 <img id="story-image" src="https://images.nigms.nih.gov/PublicAssets/2484/RNA_pol_II6.jpg">
@@ -158,23 +159,37 @@
                     };
 
                     navigator.camera.getPicture(app.ftw, app.wtf, opts);
+
+
                 },
                 ftw: function (imgURI) {
+                    $('body').prepend('<div id="preloader"></div>');
                     /*document.getElementById('msg').textContent = imgURI;*/
-                    console.log("image uri:" + imgURI);
-                    
+
 
                     /* document.getElementById('photo').src = imgURI; 
                     alert('picture taken, ready to send to server');
                     
                     */
+
                     var htmloutput = '<div id="confirm-image"><div id="send-image"><h7>Send image to event storys</h7></div><img id="story-image" src="' + imgURI + '"> </div>';
                     $('body').prepend(htmloutput);
+
+
+                    setTimeout(function () {
+                        $('#preloader').fadeOut('slow', function () {
+                            $(this).remove();
+                        });
+                    }, 500);
+
+
+
+
 
                     $('#confirm-image').click(function () {
                         $(this).remove();
                         $('body').prepend('<p>start sending data... </p>');
-                        
+
                         /* send image data to server
                     
                     formData = new FormData();
@@ -200,12 +215,12 @@
                           }
                     });
                     */
-                        
-                        
+
+
                     });
 
 
-                    
+
 
 
 

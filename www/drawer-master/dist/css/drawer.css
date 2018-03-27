@@ -555,14 +555,20 @@
 
 .drawer-menu-item:focus {
     outline: none;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 .drawer-menu li:focus {
     cursor: grab;
     outline: 0;
     color: none;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 .drawer-menu li:active {
    
     outline: 0;
     color: none;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }

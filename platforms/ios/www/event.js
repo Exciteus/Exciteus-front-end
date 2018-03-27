@@ -43,6 +43,12 @@ $(document).ready(function () {
             htmlstring += nextstring;
             output.innerHTML = htmlstring;
 
+            setTimeout(function () {
+                $('#preloader').fadeOut('slow', function () {
+                    $(this).remove();
+                });
+            }, 0);
+
 
             // Usage:
             var story_url_load_array = [
@@ -60,12 +66,9 @@ $(document).ready(function () {
             $(".icon").click(function () {
                 /* show stories */
 
-                
-
-
-                var htmloutput = '<div id="confirm-image"><img id="back-arrow" src="img/back-arrow.svg"><div id="send-image"><h7>Next</h7></div><img id="story-image" src=""> </div>';
+                var htmloutput = '<div id="confirm-image"><img id="back-arrow" class="noSelect" src="img/back-arrow.svg"><div id="send-image"><h7>Next</h7></div><img id="story-image" src=""> </div>';
                 $('body').prepend(htmloutput);
-                
+
                 $('#back-arrow').click(function () {
                     location.reload();
                 });

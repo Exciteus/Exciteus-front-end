@@ -73,14 +73,13 @@ $(document).ready(function () {
             output.innerHTML = htmlstring;
 
 
-            /* show page content -> stop preloader! */
+            /* show page content -> stop preloader with 500ms delay! */
 
-            setTimeout(
-                function () {
-                    $('#preloader').fadeOut('slow', function () {
-                        $(this).remove();
-                    });
-                }, 500);
+            setTimeout(function () {
+                $('#preloader').fadeOut('slow', function () {
+                    $(this).remove();
+                });
+            }, 500);
 
 
 
