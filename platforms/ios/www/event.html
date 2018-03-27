@@ -4,25 +4,28 @@
 
 <head>
     <!-- camera -->
+
+    <!--
     <meta http-equiv="Content-Security-Policy" 
             content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
             style-src 'self' 'unsafe-inline'; 
             media-src *; 
             script-src 'self' 'unsafe-inline';
             img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+
+
+
+
+
+
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
     <title>Exitus</title>
@@ -37,8 +40,8 @@
     <!-- drawer.css -->
     <link rel="stylesheet" href="drawer-master/dist/css/drawer.css">
     <!-- jquery & iScroll -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="iscroll.min.js"></script>
     <!-- drawer.js -->
     <script src="drawer-master/dist/js/drawer.js"></script>
 
@@ -48,19 +51,19 @@
 </head>
 
 <body class="drawer drawer--left">
-     <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-         <span class="close">&times;</span>
-            <div class="modal-content" id="modelinside">
-                
-                 <!-- 
+        <!-- Modal content -->
+        <span class="close">&times;</span>
+        <div class="modal-content" id="modelinside">
+
+            <!-- 
                 <img id="story_image"src="img/story/story1.png">
 -->
-                
-            </div>
 
         </div>
+
+    </div>
     <div class="header" id="myHeader">
 
     </div>
@@ -81,7 +84,7 @@
     </header>
     <main>
         <!-- The Modal -->
-       
+
         <div id="events">
             <!-- 
         <div class="event-head">
@@ -104,20 +107,22 @@
         </section>
 -->
         </div>
-        
+
         <!-- camera -->
+
         
-            <p><img src="" alt="image" id="photo" /></p>
-            <p><button id="btn">take picture</button></p>
-            
-        
+
+        <div id="addstory">
+            <h7>ADD STORY</h7>
+        </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script>
             let app = {
-                init: function(){
-                    document.getElementById('btn').addEventListener('click', app.takephoto);
+                init: function () {
+                    document.getElementById('addstory').addEventListener('click', app.takephoto);
                 },
-                takephoto: function(){
+                takephoto: function () {
                     let opts = {
                         quality: 100,
                         destinationType: Camera.DestinationType.FILE_URI,
@@ -126,26 +131,29 @@
                         encodingType: Camera.EncodingType.JPEG,
                         cameraDirection: Camera.Direction.BACK,
                         mediaType: Camera.MediaType.ALLMEDIA,
-                       
+
                     };
-                    
+
                     navigator.camera.getPicture(app.ftw, app.wtf, opts);
                 },
-                ftw: function(imgURI){
+                ftw: function (imgURI) {
                     /*document.getElementById('msg').textContent = imgURI;*/
-                    console.log("image uri:"+imgURI)
-                    document.getElementById('photo').src = imgURI;
+                    console.log("image uri:" + imgURI)
                     
-                    
+                    /* document.getElementById('photo').src = imgURI; */
+                    alert('picture taken, ready to send to server')
+
                 },
-                wtf: function(msg){
+                wtf: function (msg) {
                     document.getElementById('msg').textContent = msg;
                 }
             };
             
+  
             document.addEventListener('deviceready', app.init);
         </script>
-        
+
+
 
 
 
@@ -153,7 +161,3 @@
 </body>
 
 </html>
-
-
-
-
