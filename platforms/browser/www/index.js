@@ -3,6 +3,13 @@ $(document).ready(function () {
 
     $('.drawer').drawer();
 
+
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+        console.log(StatusBar);
+    }
     /*
     $(".event-item").click(function () {
 

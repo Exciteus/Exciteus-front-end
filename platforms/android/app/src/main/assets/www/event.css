@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #1E0F47;
+    font-family: "BebasNeue-Book";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+    
+        overflow-x: hidden;
+    overflow-y: scroll;
+}
+/*
+h1 {
+    font-size: 1.5em;
+    margin-top: 60px;
+    color: #46BDD5;
+}
+*/
+
+#back-arrow:focus {
+    outline:none !important;
+}
+
+.event-item {
+    background-color: #180B3D;
+    width: 95%;
+    height: 80px;
+    margin-top: 10px;
+     
+}
+
+main .icon {
+     height: 70px;
+    width: 70px;
+    margin-top: 5px;
+    float: left;
+}
+.event-head {
+    
+    width: 95%;
+    height: 80px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ECD042;
+   
+}
+.event-div {
+     height: 50px;
+    width: 75%;
+    margin-top: 10px;
+    float: right;
+}
+h2 {
+    font-size: 1.8em;
+    color: #4DBDD3;
+    margin:0;
+    padding: 0;
+ 
+}
+h3 {
+    font-size: 0.9em;
+    color: #C6C1D0;
+     margin: 0;
+    padding: 0;
+}
+.event-div-info {
+    position: relative;
+    left: 190px;
+    top: -40px;
+    width: 30%;
+    height: 100%;
+    
+}
+h4 {
+    font-size: 1.5em;
+    margin:0;
+    margin-top: 20px;
+    padding: 0;
+    color: white;
+}
+
+.description-one {
+    width: 95%;
+    height: 160px;
+    border-bottom: 2px solid #ECD042;
+}
+.description-twoo {
+    width: 95%;
+    height: 200px;
+
+    
+}
+h5 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #C6C1D1;
+    
+}
+h6 {
+    color: #C6C1D1;
+    margin: 0;
+    padding: 0;
+}
+.promo {
+    font-size: 1.4em;
+ 
+    position: relative;
+    top: 30px;
+    color: #ECD042;
+}
+.description-twoo p {
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+}
+.description-twoo img {
+    width: 100%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    
+    margin: 0 auto; /* 15% from the top and centered */
+    
+   
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
+}
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* The Close Button */
+.close {
+    z-index: 9999;
+    /*
+    margin-top: 5px;
+    margin-right: 20px;
+    */
+    position: absolute;
+    top: 3px;
+    right: 10%;
+    color: #4CBDD4;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+video {
+  object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+
+}
+#addstory {
+    width: 95%;
+    height: 40px;
+    background-color: #4CBDD4;
+    border-radius: 4px;
+    position: relative
+}
+#addstory h7 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #ECEAEC;
+    font-size: 1.1em;
+    font-family: "BebasNeue-Book";
+    font-weight: 700;
+}
+
+/* image story overlay */
+
+.image-overlay #confirm-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    /*background: #1E0F47 url('http://samherbert.net/svg-loaders/svg-loaders/rings.svg') no-repeat center center;*/
+    background: #1E0F47;
+    
+    
+}
+.image-overlay #confirm-image img {
+    max-width: 100%;
+    
+    object-fit: contain;
+    
+    
+}
+#send-image {
+    height: 50px;
+    width: 100%;
+    background-color: #4CBDD4;
+  position: fixed;
+  bottom: 0;
+}
+#confirm-image h7 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #ECEAEC;
+    font-size: 1.1em;
+    font-family: "BebasNeue-Book";
+    font-weight: 700;
+}
+
+/* preloader */
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    /*background: #1E0F47 url('http://samherbert.net/svg-loaders/svg-loaders/rings.svg') no-repeat center center;*/
+    background: #1E0F47 url('img/preloader_edit.svg') no-repeat center center;
+    background-size: 90px;
+    
+}
+#back-arrow {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+
+    outline: 0;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}

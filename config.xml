@@ -1,55 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
-    <widget id="com.axciteusapp.appreleaseone" version="1.0.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-        <name>exciteus </name>
-        <description>
+<widget id="com.axciteusapp.appreleaseone" version="1.0.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>exciteus </name>
+    <description>
             exciteus app
         </description>
-        <author email="excite-us@outlook.be" href="https://exciteus.live">
-        </author>
-        <access origin="*" />
-        <plugin name="cordova-plugin-whitelist" version="1" />
-        <allow-intent href="http://*/*" />
-        <allow-intent href="https://*/*" />
-        <allow-intent href="tel:*" />
-        <allow-intent href="sms:*" />
-        <allow-intent href="mailto:*" />
-        <allow-intent href="geo:*" />
-        <platform name="android">
-            <allow-intent href="market:*" />
-        </platform>
-        <platform name="ios">
-            <allow-intent href="itms:*" />
-            <allow-intent href="itms-apps:*" />
-        </platform>
-
-        <icon src="www/img/icon.png" />
-        <plugin name="cordova-plugin-camera" source="npm" />
-        <engine name="ios" spec="~4.5.4" />
-        
-        
-        
-        <preference name="SplashScreen" value="resourcename" />
-         <preference name="AutoHideSplashScreen" value="true" />
-        <preference name="SplashScreenDelay" value="3000" />
-        
+    <author email="excite-us@outlook.be" href="https://exciteus.live">
+    </author>
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <icon src="www/img/icon.png" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <plugin name="cordova-plugin-camera" source="npm" />
+    <preference name="SplashScreen" value="resourcename" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreen" value="splash.png" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <platform name="browser">
         <preference name="SplashScreen" value="splash.png" />
-<preference name="SplashScreenDelay" value="3000" />
-<preference name="SplashMaintainAspectRatio" value="true" />
-<preference name="SplashShowOnlyFirstTime" value="false" />
-        
-        
-        <platform name="browser">
-    <preference name="SplashScreen" value="splash.png" /> <!-- defaults to "img/logo.png" -->
-    <preference name="SplashScreenDelay" value="10000" /> <!-- defaults to "3000" -->
-    <preference name="SplashScreenBackgroundColor" value="green" /> <!-- defaults to "#464646" -->
-    <preference name="ShowSplashScreen" value="false" /> <!-- defaults to "true" -->
-    <preference name="SplashScreenWidth" value="600" /> <!-- defaults to "170" -->
-    <preference name="SplashScreenHeight" value="300" /> <!-- defaults to "200" -->
-</platform>
-        
-         <preference name="FadeSplashScreen" value="false"/>
-         <preference name="FadeSplashScreenDuration" value="3000"/>
-         <splash src="splash.png" />
-        
-        
-    </widget>
+        <preference name="SplashScreenDelay" value="10000" />
+        <preference name="SplashScreenBackgroundColor" value="green" />
+        <preference name="ShowSplashScreen" value="false" />
+        <preference name="SplashScreenWidth" value="600" />
+        <preference name="SplashScreenHeight" value="300" />
+    </platform>
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="FadeSplashScreenDuration" value="3000" />
+    <splash src="splash.png" />
+    <plugin name="cordova-plugin-statusbar" source="npm" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#46BDD5" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <engine name="ios" spec="~4.5.4" />
+    <engine name="android" spec="~7.0.0" />
+</widget>
