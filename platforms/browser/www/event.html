@@ -50,7 +50,20 @@
     <link rel="stylesheet" href="event.css">
 </head>
 
-<body class="drawer drawer--left">
+<body class="drawer drawer--left image-overlay">
+    <img id="back-arrow" src="img/back-arrow.svg">
+    <!--
+    <div id="confirm-image">
+        <div id="send-image"><h7>Send image to event story's</h7></div>
+        <img id="story-image" src="https://i.pinimg.com/736x/2e/79/51/2e7951e5019876bfe964810a50c65951--dinner-parties-celebrity-pictures.jpg">
+<img id="story-image" src="https://images.nigms.nih.gov/PublicAssets/2484/RNA_pol_II6.jpg">
+<img id="story-image" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Panorama_Passo_del_Maniva_-_high_resolution.jpg">
+
+        
+    </div>
+-->
+
+
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -75,7 +88,7 @@
         <nav class="drawer-nav" role="navigation">
             <ul class="drawer-menu">
                 <li><a class="drawer-brand" href="#">EXITUS</a></li>
-                <li><a class="drawer-menu-item" href="index.html">Events</a></li>
+                <li><a class="drawer-menu-item" href="index.html">Overview</a></li>
                 <li><a class="drawer-menu-item" href="about-the-platform.html">About the platform</a></li>
                 <li><a class="drawer-menu-item" href="about-us.html">About us</a></li>
 
@@ -110,7 +123,7 @@
 
         <!-- camera -->
 
-        
+
 
         <div id="addstory">
             <h7>ADD STORY</h7>
@@ -125,12 +138,22 @@
                 takephoto: function () {
                     let opts = {
                         quality: 100,
+                        x: 0,
+                        y: 0,
+                        width: window.screen.width,
+
+
+
                         destinationType: Camera.DestinationType.FILE_URI,
                         sourceType: Camera.PictureSourceType.CAMERA,
                         mediaType: Camera.MediaType.PICTURE,
                         encodingType: Camera.EncodingType.JPEG,
                         cameraDirection: Camera.Direction.BACK,
                         mediaType: Camera.MediaType.ALLMEDIA,
+                        targetWidth: 1080,
+                        targetHeight: 1920,
+
+
 
                     };
 
@@ -138,18 +161,87 @@
                 },
                 ftw: function (imgURI) {
                     /*document.getElementById('msg').textContent = imgURI;*/
-                    console.log("image uri:" + imgURI)
+                    console.log("image uri:" + imgURI);
                     
-                    /* document.getElementById('photo').src = imgURI; */
-                    alert('picture taken, ready to send to server')
+
+                    /* document.getElementById('photo').src = imgURI; 
+                    alert('picture taken, ready to send to server');
+                    
+                    */
+                    var htmloutput = '<div id="confirm-image"><div id="send-image"><h7>Send image to event storys</h7></div><img id="story-image" src="' + imgURI + '"> </div>';
+                    $('body').prepend(htmloutput);
+
+                    $('#confirm-image').click(function () {
+                        $(this).remove();
+                        $('body').prepend('<p>start sending data... </p>');
+                        
+                        /* send image data to server
+                    
+                    formData = new FormData();
+                    var blob = dataURItoBlob(imgURI);
+                    formData.append('imagedata', blob);
+                    
+                     $.ajax({
+                        url: 'JSONURL',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        type: 'POST',
+                        success: function (data) {
+                            alert(data);
+                            $('body').prepend('<p>data send succes</p>');
+                            
+                            
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            alert(xhr.status);
+                            alert(thrownError);
+                            $('body').prepend('<p>Error sending data to server</p>');
+                          }
+                    });
+                    */
+                        
+                        
+                    });
+
+
+                    
+
+
+
+
 
                 },
                 wtf: function (msg) {
                     document.getElementById('msg').textContent = msg;
                 }
             };
-            
-  
+
+            function dataURItoBlob(dataURI) {
+                // convert base64/URLEncoded data component to raw binary data held in a string
+                var byteString;
+
+                if (dataURI.split(',')[0].indexOf('base64') >= 0)
+                    byteString = atob(dataURI.split(',')[1]);
+                else
+                    byteString = unescape(dataURI.split(',')[1]);
+
+                // separate out the mime component
+                var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+                // write the bytes of the string to a typed array
+                var ia = new Uint8Array(byteString.length);
+
+                for (var i = 0; i < byteString.length; i++) {
+                    ia[i] = byteString.charCodeAt(i);
+                }
+
+                return new Blob([ia], {
+                    type: mimeString
+                });
+            }
+
+
             document.addEventListener('deviceready', app.init);
         </script>
 
