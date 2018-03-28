@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="event.css">
 </head>
 
-<body class="drawer drawer--left image-overlay js">
+<body class="drawer drawer--right image-overlay js">
     <div id="preloader"></div>
     <!--
     <div id="confirm-image">
@@ -64,7 +64,7 @@
     </div>
 -->
 
-
+    <img onclick="gohome()" id="back-arrow" class="noSelect" src="img/back-arrow.svg" >
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -133,6 +133,10 @@
 
         <script type="text/javascript" src="cordova.js"></script>
         <script>
+            
+            function gohome() {
+        location.href = "index.html"
+    }
             let app = {
                 init: function () {
                     document.getElementById('addstory').addEventListener('click', app.takephoto);

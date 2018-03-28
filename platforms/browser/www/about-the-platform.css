@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 body {
+     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: #1E0F47;
     font-family: "BebasNeue-Book";
     text-rendering: optimizeLegibility;

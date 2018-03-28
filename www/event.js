@@ -1,70 +1,75 @@
 $(document).ready(function () {
-            $('.drawer').drawer();
+    $('.drawer').drawer();
 
 
-            /* array with preloaded images */
-            var PreloadedImages = [];
-            var storiesAvailable = false;
-            var id = getQueryStringValue('id');
-            var htmlstring = "";
-            var output = document.getElementById("events");
-            var urll = "https://on-the-moment-dev.herokuapp.com/external/events/" + id;
-            console.log(urll);
-            /*
-            var story1;
-            var story2;
-            var story3;
-            var n = 1;
-            var clickcounter = 1;
+    /* array with preloaded images */
+    var PreloadedImages = [];
+    var storiesAvailable = false;
+    var id = getQueryStringValue('id');
+    var htmlstring = "";
+    var output = document.getElementById("events");
+    var urll = "https://on-the-moment-dev.herokuapp.com/external/events/" + id;
+    console.log(urll);
+    /*
+    var story1;
+    var story2;
+    var story3;
+    var n = 1;
+    var clickcounter = 1;
+    */
+
+    /* get id from query string */
+    function getQueryStringValue(key) {
+        return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+    }
+
+    function gohome() {
+        location.href = "index.html"
+    }
+
+
+
+    /* get data with json for detail screen */
+    $.ajax({
+        type: 'GET',
+        crossOrigin: true,
+        url: "https://on-the-moment-dev.herokuapp.com/external/events/" + id,
+
+        dataType: "json",
+        success: function (data) {
+
+            /* old nextstring
+
+            nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
             */
 
-            /* get id from query string */
-            function getQueryStringValue(key) {
-                return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+
+            if ((data.stories.images.length) > 0) {
+                storiesAvailable = true;
+
+                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
+            } else {
+                storiesAvailable = false;
+
+                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
+
             }
 
 
 
-            /* get data with json for detail screen */
-            $.ajax({
-                    type: 'GET',
-                    crossOrigin: true,
-                    url: "https://on-the-moment-dev.herokuapp.com/external/events/" + id,
 
-                    dataType: "json",
-                    success: function (data) {
+            htmlstring += nextstring;
+            output.innerHTML = htmlstring;
 
-                        /* old nextstring
-
-                        nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
-                        */
+            setTimeout(function () {
+                $('#preloader').fadeOut('slow', function () {
+                    $(this).remove();
+                });
+            }, 0);
 
 
-                        if ((data.stories.images.length) > 0) {
-                                storiesAvailable = true;
-
-                                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
-                            } else {
-                                storiesAvailable = false;
-
-                                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
-
-                            }
-
-
-
-
-                            htmlstring += nextstring; output.innerHTML = htmlstring;
-
-                            setTimeout(function () {
-                                $('#preloader').fadeOut('slow', function () {
-                                    $(this).remove();
-                                });
-                            }, 0);
-
-
-                            // Usage:
-                            var story_url_load_array = [
+            // Usage:
+            var story_url_load_array = [
                 "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-Image-HD-Vertical-hd-desktop-wallpapers-cool-images-download-apple-background-wallpapers-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
                 "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-HD-Image-Vertical-cool-images-amazing-hd-download-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
                 "https://www.pixelstalk.net/wp-content/uploads/2016/08/1080-x-1920-Background-HD-Vertical.jpg",
@@ -76,156 +81,156 @@ $(document).ready(function () {
 
 
 
-                            $(".icon").click(function () {
+            $(".icon").click(function () {
 
-                                if (storiesAvailable) {
-
-
-                                    /* show stories */
-
-                                    var htmloutput = '<div id="confirm-image"><img id="back-arrow" class="noSelect" src="img/back-arrow.svg"><div id="send-image"><h7>Next</h7></div><img id="story-image" src=""> </div>';
-                                    $('body').prepend(htmloutput);
-
-                                    $('#back-arrow').click(function () {
-                                        location.reload();
-                                    });
+                if (storiesAvailable) {
 
 
-                                    /* input first story image */
-                                    var i = 0;
+                    /* show stories */
+
+                    var htmloutput = '<div id="confirm-image"><img id="back-arrow" class="noSelect" src="img/back-arrow.svg"><div id="send-image"><h7>Next</h7></div><img id="story-image" src=""> </div>';
+                    $('body').prepend(htmloutput);
+
+                    $('#back-arrow').click(function () {
+                        location.reload();
+                    });
 
 
-                                    if (story_url_load_array.length >= PreloadedImages.length) {
-                                        /* if image is not loaded yet */
-                                        document.getElementById('story-image').src = story_url_load_array[i];
-                                        console.log("not loaded");
-                                    } else {
-                                        /* if image is loaded */
-                                        document.getElementById('story-image').src = (PreloadedImages[i].src);
-                                        console.log("ready");
-                                    }
+                    /* input first story image */
+                    var i = 0;
 
 
-                                    $('#send-image').click(function () {
-
-                                        if (story_url_load_array.length == 1) {
-                                            $('#confirm-image').remove();
-                                        } else {
-                                            i += 1;
-
-
-                                            if (story_url_load_array.length > PreloadedImages.length) {
-                                                /* if image is not loaded yet */
-                                                document.getElementById('story-image').src = story_url_load_array[i];
-                                                console.log("not loaded");
-                                            } else if (story_url_load_array.length <= i) {
-                                                /* all storys seen */
-                                                $('#confirm-image').remove();
-
-                                            } else if (story_url_load_array.length <= PreloadedImages.length) {
-                                                /* if image is loaded */
-                                                document.getElementById('story-image').src = (PreloadedImages[i].src);
-                                                console.log("ready");
-                                            }
-                                        }
+                    if (story_url_load_array.length >= PreloadedImages.length) {
+                        /* if image is not loaded yet */
+                        document.getElementById('story-image').src = story_url_load_array[i];
+                        console.log("not loaded");
+                    } else {
+                        /* if image is loaded */
+                        document.getElementById('story-image').src = (PreloadedImages[i].src);
+                        console.log("ready");
+                    }
 
 
+                    $('#send-image').click(function () {
+
+                        if (story_url_load_array.length == 1) {
+                            $('#confirm-image').remove();
+                        } else {
+                            i += 1;
 
 
-                                    });
+                            if (story_url_load_array.length > PreloadedImages.length) {
+                                /* if image is not loaded yet */
+                                document.getElementById('story-image').src = story_url_load_array[i];
+                                console.log("not loaded");
+                            } else if (story_url_load_array.length <= i) {
+                                /* all storys seen */
+                                $('#confirm-image').remove();
 
-                                }
-
-                            });
-
-                            /* preloader */
-
-                            preload(story_url_load_array);
-
-
+                            } else if (story_url_load_array.length <= PreloadedImages.length) {
+                                /* if image is loaded */
+                                document.getElementById('story-image').src = (PreloadedImages[i].src);
+                                console.log("ready");
+                            }
                         }
+
+
+
+
                     });
 
-                /* unix time to human read time */
-                function timeConverter(UNIX_timestamp) {
-                    // Months array
-                    var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-                    // Convert timestamp to milliseconds
-                    var date = new Date(UNIX_timestamp * 1000);
-
-                    // Year
-                    var year = date.getFullYear();
-
-                    // Month
-                    var month = months_arr[date.getMonth()];
-
-                    // Day
-                    var day = date.getDate();
-
-                    // Hours
-                    var hours = date.getHours();
-
-                    // Minutes
-                    var minutes = "0" + date.getMinutes();
-
-
-
-                    // Display date time in MM-dd-yyyy h:m:s format
-                    var convdataTime = month + '-' + day + '-' + year + ' ' + hours + ':' + minutes.substr(-2);
-                    return convdataTime;
-
                 }
 
-                function OnlyTimeConverter(UNIX_timestamp) {
-                    var date = new Date(UNIX_timestamp * 1000);
-                    var hours = date.getHours();
+            });
 
-                    // Minutes
-                    var minutes = "0" + date.getMinutes();
-                    var conv = hours + ':' + minutes.substr(-2);
-                    return conv;
-                }
+            /* preloader */
 
-                function OnlyDateConverter(UNIX_timestamp) {
-                    // Convert timestamp to milliseconds
-                    var date = new Date(UNIX_timestamp * 1000);
-                    var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-                    // Year
-                    var year = date.getFullYear();
-
-                    // Month
-                    var month = months_arr[date.getMonth()];
-
-                    // Day
-                    var day = date.getDate();
-
-                    var conv = month + '-' + day + '-' + year;
-                    return conv;
-                }
+            preload(story_url_load_array);
 
 
+        }
+    });
 
+    /* unix time to human read time */
+    function timeConverter(UNIX_timestamp) {
+        // Months array
+        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-                function preload(arrayOfImages) {
-                    $(arrayOfImages).each(function () {
-                        var story = new Image();
-                        story.src = this;
-                        PreloadedImages.push(story);
+        // Convert timestamp to milliseconds
+        var date = new Date(UNIX_timestamp * 1000);
 
-                    });
-                }
+        // Year
+        var year = date.getFullYear();
+
+        // Month
+        var month = months_arr[date.getMonth()];
+
+        // Day
+        var day = date.getDate();
+
+        // Hours
+        var hours = date.getHours();
+
+        // Minutes
+        var minutes = "0" + date.getMinutes();
 
 
 
+        // Display date time in MM-dd-yyyy h:m:s format
+        var convdataTime = month + '-' + day + '-' + year + ' ' + hours + ':' + minutes.substr(-2);
+        return convdataTime;
+
+    }
+
+    function OnlyTimeConverter(UNIX_timestamp) {
+        var date = new Date(UNIX_timestamp * 1000);
+        var hours = date.getHours();
+
+        // Minutes
+        var minutes = "0" + date.getMinutes();
+        var conv = hours + ':' + minutes.substr(-2);
+        return conv;
+    }
+
+    function OnlyDateConverter(UNIX_timestamp) {
+        // Convert timestamp to milliseconds
+        var date = new Date(UNIX_timestamp * 1000);
+        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        // Year
+        var year = date.getFullYear();
+
+        // Month
+        var month = months_arr[date.getMonth()];
+
+        // Day
+        var day = date.getDate();
+
+        var conv = month + '-' + day + '-' + year;
+        return conv;
+    }
+
+
+
+
+    function preload(arrayOfImages) {
+        $(arrayOfImages).each(function () {
+            var story = new Image();
+            story.src = this;
+            PreloadedImages.push(story);
+
+        });
+    }
 
 
 
 
 
 
-                /* json return
+
+
+
+    /* json return
     
     {  
    "icon":"https://not-implemented-yet.png",
@@ -253,7 +258,7 @@ $(document).ready(function () {
 
 
 
-                /*
+    /*
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             // Typical action to be performed when the document is ready:
@@ -373,4 +378,4 @@ $(document).ready(function () {
 
 */
 
-            });
+});
