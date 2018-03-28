@@ -242,6 +242,8 @@ video {
     background-color: #4CBDD4;
   position: fixed;
   bottom: 0;
+    background-image: url(img/yellow-circle.svg);
+    background-size: 65px 65px;
 }
 #confirm-image h7 {
     margin: 0;
@@ -282,4 +284,11 @@ video {
     outline: 0;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+.yellow-circle {
+    margin-left: -5px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    
 }
