@@ -132,10 +132,14 @@ h6 {
    
 }
 
+.material-icons {
+    vertical-align: middle;
+}
 
 
-
-
+.icon-small {
+    font-size: 22px !important;
+}
 
 
 
@@ -204,7 +208,8 @@ video {
     height: 40px;
     background-color: #4CBDD4;
     border-radius: 4px;
-    position: relative
+    position: relative;
+    margin-bottom: 15px;
 }
 #addstory h7 {
     margin: 0;
