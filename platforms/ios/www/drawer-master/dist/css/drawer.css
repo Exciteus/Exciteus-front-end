@@ -22,38 +22,45 @@
   width: 16.25rem;
   height: 100%;
   color: #46BDD5;
-  background-color: #fff;
+  background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);
 }
 
 .drawer-brand {
   font-size: 2em;
   font-weight: bold;
-  line-height: 3.75rem;
   display: block;
+  margin-top: 10px;
   padding-right: .75rem;
   padding-left: .75rem;
+  text-align: center;
   text-decoration: none;
   color: #46BDD5;
 }
 
 .drawer-menu {
-  margin: 0;
+  margin-left: 25px;
+  margin-right: 25px;
   padding: 0;
   list-style: none;
 }
 
 .drawer-menu-item {
-  font-size: 2em;
+  font-size: 1.8em;
   display: block;
-  padding: .9rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
   text-decoration: none;
-  color: #46BDD5;
+  color: #fff;
+}
+
+.drawer-divider {
+  border-color: #ECD042;
 }
 
 
 .drawer-menu-item:hover {
   
-  color: #46BDD5;
+  color: rgb(175, 175, 175);
   background-color: transparent;
 }
 
