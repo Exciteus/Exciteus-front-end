@@ -242,8 +242,7 @@ video {
     background-color: #4CBDD4;
   position: fixed;
   bottom: 0;
-    background-image: url(img/yellow-circle.svg);
-    background-size: 65px 65px;
+    
 }
 #confirm-image h7 {
     margin: 0;
@@ -287,8 +286,9 @@ video {
 }
 .yellow-circle {
     margin-left: -5px;
-    width: 80px;
+    width: px;
     height: 80px;
     position: absolute;
+    
     
 }
