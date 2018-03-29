@@ -530,7 +530,7 @@
 /* Style the header */
 .header {
   padding: 15px 16px;
-  background: #1E0F47;
+  background: transparent;
   color: #f1f1f1;
     height: 30px;
     width: 100%;

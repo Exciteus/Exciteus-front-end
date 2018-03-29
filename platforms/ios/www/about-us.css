@@ -9,7 +9,13 @@ html {
 body {
      overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #1E0F47;
+    background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);
+    height: 100%;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: "BebasNeue-Book";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -24,7 +30,7 @@ h1 {
     border-bottom: 2px solid #ECD042;
 }
 p {
-    width: 95%;
+    width: 100%;
     color: #F6F6F6;
     font-size: 1em;
     font-family: 'Source Sans Pro';

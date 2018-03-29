@@ -7,13 +7,18 @@ html {
 }
 
 body {
-    background-color: #1E0F47;
+    background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);
+    height: 100%;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: "BebasNeue-Book";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-    
-        overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 /*
@@ -30,7 +35,7 @@ h1 {
 
 .event-item {
     background-color: #180B3D;
-    width: 95%;
+    width: 100%;
     height: 80px;
     margin-top: 10px;
      
@@ -44,7 +49,7 @@ main .icon {
 }
 .event-head {
     
-    width: 95%;
+    width: 100%;
     height: 80px;
     margin-top: 5px;
     padding-bottom: 20px;
@@ -87,12 +92,12 @@ h4 {
 }
 
 .description-one {
-    width: 95%;
+    width: 100%;
     height: 160px;
     border-bottom: 2px solid #ECD042;
 }
 .description-twoo {
-    width: 95%;
+    width: 100%;
     height: 200px;
 
     
@@ -195,7 +200,7 @@ video {
 
 }
 #addstory {
-    width: 95%;
+    width: 100%;
     height: 40px;
     background-color: #4CBDD4;
     border-radius: 4px;
