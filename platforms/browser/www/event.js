@@ -1,6 +1,53 @@
 $(document).ready(function () {
     $('.drawer').drawer();
 
+    /* test! */
+    $("#testform").submit(function (event) {
+        alert("Handler for .submit() called.");
+        event.preventDefault();
+
+
+        formData = new FormData();
+        formData.append('file', $('input[type=file]')[0].files[0]); 
+        console.log('inputed data');
+        
+
+        $.ajax({
+            async: true,
+            crossDomain: true,
+            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
+            processData: false,
+            contentType: false,
+            type: 'POST',
+            mimeType: "multipart/form-data",
+            data: formData,
+            success: function (data) {
+                alert(data);
+                $('body').prepend('<p>formdata sended</p>');
+
+
+            },
+            error: function (request, error) {
+
+
+                alert(" error: Can't do because: " + request.responseText);
+            }
+        });
+
+
+        /* test */
+
+
+
+    });
+
+
+
+
+
+
+
+
 
     /* array with preloaded images */
     var PreloadedImages = [];
@@ -45,9 +92,9 @@ $(document).ready(function () {
                 nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
             } else {
             */
-                storiesAvailable = false;
+            storiesAvailable = false;
 
-                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src="+data.coverPhoto+"></section>";
+            nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src=" + data.coverPhoto + "></section>";
             /*
             }
             */

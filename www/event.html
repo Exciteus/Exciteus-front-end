@@ -64,7 +64,7 @@
     </div>
 -->
 
-    <img onclick="gohome()" id="back-arrow" class="noSelect" src="img/back-arrow.svg" >
+    <img onclick="gohome()" id="back-arrow" class="noSelect" src="img/back-arrow.svg">
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -130,13 +130,27 @@
         <div id="addstory">
             <h7>ADD STORY</h7>
         </div>
+        
+        <form id="testform" method="post">
+        <input id="testinput" name="myFile" type="file">
+        <input type="submit" value="Submit">
+        </form>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script>
             
+
+
+
+
+
+
+
+
+
             function gohome() {
-        location.href = "index.html"
-    }
+                location.href = "index.html"
+            }
             let app = {
                 init: function () {
                     document.getElementById('addstory').addEventListener('click', app.takephoto);
@@ -194,32 +208,73 @@
                     $('#confirm-image').click(function () {
                         $(this).remove();
                         $('body').prepend('<p>start sending data... </p>');
+                        $('body').prepend('<p>' + imgURI + '</p>');
 
-                        /* send image data to server
-                    
-                    formData = new FormData();
-                    var blob = dataURItoBlob(imgURI);
-                    formData.append('imagedata', blob);
-                    
-                     $.ajax({
-                        url: 'JSONURL',
-                        data: formData,
-                        processData: false,
-                        contentType: false,
-                        type: 'POST',
-                        success: function (data) {
-                            alert(data);
-                            $('body').prepend('<p>data send succes</p>');
+                        /*
+                        formData = new FormData();
+                        var blob = dataURItoBlob(imgURI);
+                        formData.append('file', 'img/splashscreen.png');
+
+                        $.ajax({
+                            async: true,
+                            crossDomain: true,
+                            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
+                            processData: false,
+                            contentType: false,
+                            type: 'POST',
+                            mimeType: "multipart/form-data",
+                            data: formData,
+                            success: function (data) {
+                                alert(data);
+                                $('body').prepend('<p>data send succes</p>');
+
+
+                            },
+                            error: function (xhr, ajaxOptions, thrownError) {
+                                alert(xhr.status);
+                                alert(thrownError);
+                                $('body').prepend('<p>Error sending data to server</p>');
+                            }
+                        });
+                        */
+
+
+
+
+                        /*
+
+                        var blob = dataURItoBlob(imgURI);
+
+                        var form = new FormData();
+                        form.append("file", imgURI);
+
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
+                            "method": "POST",
+                            "processData": false,
+                            "contentType": false,
+                            "mimeType": "multipart/form-data",
+                            "data": form
+                        }
+
+                        $.ajax(settings).done(function (response) {
+                            console.log(response);
+                            $('body').prepend('<p>succes!</p>');
+                        });
+
+                        $.ajax(settings).error(function (request, status, error) {
+                            alert(request.responseText);
+                            alert(.responseText);
                             
-                            
-                        },
-                        error: function (xhr, ajaxOptions, thrownError) {
-                            alert(xhr.status);
-                            alert(thrownError);
-                            $('body').prepend('<p>Error sending data to server</p>');
-                          }
-                    });
-                    */
+                        });
+
+    */
+
+
+
+                        /* https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a */
 
 
                     });
