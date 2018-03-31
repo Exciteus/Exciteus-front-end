@@ -8,14 +8,14 @@ $(document).ready(function () {
 
 
         formData = new FormData();
-        formData.append('file', $('input[type=file]')[0].files[0]); 
+        formData.append('file', $('input[type=file]')[0].files[0]);
         console.log('inputed data');
-        
+
 
         $.ajax({
             async: true,
             crossDomain: true,
-            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
+            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-2ebd0e70-e55a-4131-8c4b-500440bfd367",
             processData: false,
             contentType: false,
             type: 'POST',
@@ -40,15 +40,6 @@ $(document).ready(function () {
 
 
     });
-
-
-
-
-
-
-
-
-
     /* array with preloaded images */
     var PreloadedImages = [];
     var storiesAvailable = false;
@@ -84,22 +75,20 @@ $(document).ready(function () {
 
         dataType: "json",
         success: function (data) {
-            /*
 
-            if ((data.stories.images.length) > 0) {
+
+            if ((data.stories.length) > 0) {
                 storiesAvailable = true;
-
                 nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
+
+                /* story array */
+                var story_url_load_array = data.stories;
             } else {
-            */
-            storiesAvailable = false;
 
-            nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src=" + data.coverPhoto + "></section>";
-            /*
+                storiesAvailable = false;
+                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3>" + data.place.name + ", " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5>WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5>START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src=" + data.coverPhoto + "></section>";
+
             }
-            */
-
-
 
             htmlstring += nextstring;
             output.innerHTML = htmlstring;
@@ -110,21 +99,8 @@ $(document).ready(function () {
                 });
             }, 0);
 
-
-            // Usage:
-            var story_url_load_array = [
-                "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-Image-HD-Vertical-hd-desktop-wallpapers-cool-images-download-apple-background-wallpapers-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
-                "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-HD-Image-Vertical-cool-images-amazing-hd-download-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
-                "https://www.pixelstalk.net/wp-content/uploads/2016/08/1080-x-1920-Background-HD-Vertical.jpg",
-                "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-HD-1080-x-1920-Background-Vertical-PIC-WPD008558.jpg"
-
-            ];
-
-
-
-
-
-            $(".icon").click(function () {
+            $(".yellow-circle").click(function () {
+                console.log("open stories");
 
                 if (storiesAvailable) {
 
@@ -143,9 +119,9 @@ $(document).ready(function () {
                     var i = 0;
 
 
-                    if (story_url_load_array.length >= PreloadedImages.length) {
+                    if (data.stories.length >= PreloadedImages.length) {
                         /* if image is not loaded yet */
-                        document.getElementById('story-image').src = story_url_load_array[i];
+                        document.getElementById('story-image').src = data.stories[i];
                         console.log("not loaded");
                     } else {
                         /* if image is loaded */
@@ -155,25 +131,31 @@ $(document).ready(function () {
 
 
                     $('#send-image').click(function () {
-
-                        if (story_url_load_array.length == 1) {
+                        console.log("next");
+                         console.log(data.stories[i]);
+                        if (data.stories.length == 1) {
                             $('#confirm-image').remove();
                         } else {
-                            i += 1;
+                            i = i + 1;
 
 
-                            if (story_url_load_array.length > PreloadedImages.length) {
+                            if (data.stories.length > PreloadedImages.length) {
                                 /* if image is not loaded yet */
-                                document.getElementById('story-image').src = story_url_load_array[i];
-                                console.log("not loaded");
+                                var newsrc = (data.stories[i]);
+                               
+                                $("#story-image").attr("src",newsrc);
+                                
+                             
+                                
                             } else if (story_url_load_array.length <= i) {
                                 /* all storys seen */
                                 $('#confirm-image').remove();
 
-                            } else if (story_url_load_array.length <= PreloadedImages.length) {
+                            } else if (data.stories.length <= PreloadedImages.length) {
                                 /* if image is loaded */
-                                document.getElementById('story-image').src = (PreloadedImages[i].src);
-                                console.log("ready");
+                                document.getElementById('story-image').src = PreloadedImages[i].src;
+                                console.log("ready2: "+PreloadedImages[i].src);
+                               
                             }
                         }
 
@@ -267,7 +249,15 @@ $(document).ready(function () {
 
 
 
+            /* example story array 
+            var story_url_load_array = [
+                "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-Image-HD-Vertical-hd-desktop-wallpapers-cool-images-download-apple-background-wallpapers-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
+                "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-HD-Image-Vertical-cool-images-amazing-hd-download-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
+                "https://www.pixelstalk.net/wp-content/uploads/2016/08/1080-x-1920-Background-HD-Vertical.jpg",
+                "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-HD-1080-x-1920-Background-Vertical-PIC-WPD008558.jpg"
 
+            ];
+            */
 
 
 
