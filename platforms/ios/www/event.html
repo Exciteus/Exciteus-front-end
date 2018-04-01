@@ -130,24 +130,14 @@
         <div id="addstory">
             <h7>ADD STORY</h7>
         </div>
-        
+
         <form id="testform" method="post">
-        <input id="testinput" name="myFile" type="file">
-        <input type="submit" value="Submit">
+            <input id="testinput" name="myFile" type="file">
+            <input type="submit" value="Submit">
         </form>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script>
-            
-
-
-
-
-
-
-
-
-
             function gohome() {
                 location.href = "index.html"
             }
@@ -209,6 +199,41 @@
                         $(this).remove();
                         $('body').prepend('<p>start sending data... </p>');
                         $('body').prepend('<p>' + imgURI + '</p>');
+
+
+
+                        formData = new FormData();
+                        formData.append('file', imgURI);
+                        console.log('inputed data');
+
+
+                        $.ajax({
+                            async: true,
+                            crossDomain: true,
+                            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-2ebd0e70-e55a-4131-8c4b-500440bfd367",
+                            processData: false,
+                            contentType: false,
+                            type: 'POST',
+                            mimeType: "multipart/form-data",
+                            data: formData,
+                            success: function (data) {
+                                alert(data);
+                                $('body').prepend('<p>formdata sended</p>');
+
+
+                            },
+                            error: function (request, error) {
+
+
+                                alert(" error: Can't do because: " + request.responseText);
+                            }
+                        });
+
+
+                        /* test */
+
+
+
 
                         /*
                         formData = new FormData();

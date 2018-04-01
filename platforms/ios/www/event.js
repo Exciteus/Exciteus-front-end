@@ -6,7 +6,7 @@ $(document).ready(function () {
         alert("Handler for .submit() called.");
         event.preventDefault();
 
-
+        /*
         formData = new FormData();
         formData.append('file', $('input[type=file]')[0].files[0]);
         console.log('inputed data');
