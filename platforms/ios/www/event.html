@@ -211,7 +211,7 @@
                         var blobfile = dataURItoBlob(imgURI);
                         console.log(imgURI);
                         console.log(blobfile);
-                        formData.append('file', blobfile);
+                        formData.append('file', imgURI);
                         
                         
                         console.log('inputed data');
@@ -227,7 +227,7 @@
                             mimeType: "multipart/form-data",
                             data: formData,
                             success: function (data) {
-                                alert(data);
+                               
                                 $('body').prepend('<p>formdata sended</p>');
 
 
