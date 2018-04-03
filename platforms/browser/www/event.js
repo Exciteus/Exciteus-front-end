@@ -6,7 +6,7 @@ $(document).ready(function () {
         alert("Handler for .submit() called.");
         event.preventDefault();
 
-        /*
+        
         formData = new FormData();
         formData.append('file', $('input[type=file]')[0].files[0]);
         console.log('inputed data');
@@ -15,7 +15,7 @@ $(document).ready(function () {
         $.ajax({
             async: true,
             crossDomain: true,
-            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-2ebd0e70-e55a-4131-8c4b-500440bfd367",
+            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-666b7be3-8010-4a58-8ead-31d995cdac2a",
             processData: false,
             contentType: false,
             type: 'POST',
@@ -24,6 +24,7 @@ $(document).ready(function () {
             success: function (data) {
                 alert(data);
                 $('body').prepend('<p>formdata sended</p>');
+                console.log(data);
 
 
             },

@@ -208,7 +208,11 @@
 
 
                         formData = new FormData();
-                        formData.append('file', imgURI);
+                        var blobfile = dataURItoBlob(dataURI);
+                        console.log()
+                        formData.append('file', blobfile);
+                        
+                        
                         console.log('inputed data');
 
 
@@ -231,6 +235,7 @@
 
 
                                 alert(" error: Can't do because: " + request.responseText);
+                                /* REQUIRED REQUEST "FILE" IS NOT PRESENT */
                             }
                         });
 
