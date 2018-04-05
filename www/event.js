@@ -6,7 +6,7 @@ $(document).ready(function () {
         alert("Handler for .submit() called.");
         event.preventDefault();
 
-        
+
         formData = new FormData();
         formData.append('file', $('input[type=file]')[0].files[0]);
         console.log('inputed data');
@@ -133,7 +133,7 @@ $(document).ready(function () {
 
                     $('#send-image').click(function () {
                         console.log("next");
-                         console.log(data.stories[i]);
+                        console.log(data.stories[i]);
                         if (data.stories.length == 1) {
                             $('#confirm-image').remove();
                         } else {
@@ -143,11 +143,11 @@ $(document).ready(function () {
                             if (data.stories.length > PreloadedImages.length) {
                                 /* if image is not loaded yet */
                                 var newsrc = (data.stories[i]);
-                               
-                                $("#story-image").attr("src",newsrc);
-                                
-                             
-                                
+
+                                $("#story-image").attr("src", newsrc);
+
+
+
                             } else if (story_url_load_array.length <= i) {
                                 /* all storys seen */
                                 $('#confirm-image').remove();
@@ -155,8 +155,8 @@ $(document).ready(function () {
                             } else if (data.stories.length <= PreloadedImages.length) {
                                 /* if image is loaded */
                                 document.getElementById('story-image').src = PreloadedImages[i].src;
-                                console.log("ready2: "+PreloadedImages[i].src);
-                               
+                                console.log("ready2: " + PreloadedImages[i].src);
+
                             }
                         }
 
@@ -250,15 +250,15 @@ $(document).ready(function () {
 
 
 
-            /* example story array 
-            var story_url_load_array = [
-                "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-Image-HD-Vertical-hd-desktop-wallpapers-cool-images-download-apple-background-wallpapers-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
-                "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-HD-Image-Vertical-cool-images-amazing-hd-download-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
-                "https://www.pixelstalk.net/wp-content/uploads/2016/08/1080-x-1920-Background-HD-Vertical.jpg",
-                "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-HD-1080-x-1920-Background-Vertical-PIC-WPD008558.jpg"
+    /* example story array 
+    var story_url_load_array = [
+        "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-Image-HD-Vertical-hd-desktop-wallpapers-cool-images-download-apple-background-wallpapers-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
+        "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-HD-Image-Vertical-cool-images-amazing-hd-download-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
+        "https://www.pixelstalk.net/wp-content/uploads/2016/08/1080-x-1920-Background-HD-Vertical.jpg",
+        "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-HD-1080-x-1920-Background-Vertical-PIC-WPD008558.jpg"
 
-            ];
-            */
+    ];
+    */
 
 
 
@@ -411,5 +411,287 @@ $(document).ready(function () {
     xhttp.send();
 
 */
+
+    function gohome() {
+        location.href = "index.html"
+    }
+    let app = {
+        init: function () {
+            document.getElementById('addstory').addEventListener('click', app.takephoto);
+        },
+        takephoto: function () {
+            let opts = {
+                quality: 20,
+                x: 0,
+                y: 0,
+                width: window.screen.width,
+
+
+
+                destinationType: Camera.DestinationType.DATA_URL,
+                sourceType: Camera.PictureSourceType.CAMERA,
+                mediaType: Camera.MediaType.PICTURE,
+                encodingType: Camera.EncodingType.JPEG,
+                cameraDirection: Camera.Direction.BACK,
+                mediaType: Camera.MediaType.ALLMEDIA,
+                targetWidth: 1080,
+                targetHeight: 1920,
+
+
+
+            };
+
+            navigator.camera.getPicture(app.ftw, app.wtf, opts);
+
+
+        },
+        ftw: function (imageData) {
+            $('body').prepend('<div id="preloader"></div>');
+            /*document.getElementById('msg').textContent = imgURI;*/
+
+
+            /* document.getElementById('photo').src = imgURI; 
+            alert('picture taken, ready to send to server');
+                    
+            */
+
+            var htmloutput = '<div id="confirm-image"><div id="send-image"><h7>Send image to event storys</h7></div><img id="story-image" src="data:image/jpeg;base64,' + imageData + '"></div>';
+            $('body').prepend(htmloutput);
+
+
+            setTimeout(function () {
+                $('#preloader').fadeOut('slow', function () {
+                    $(this).remove();
+                });
+            }, 500);
+
+
+
+
+
+            $('#confirm-image').click(function () {
+                $(this).remove();
+                $('body').prepend('<p>start sending data... </p>');
+
+                /*  $('body').prepend('<p>' + imgURI + '</p>');*/
+
+                /*
+
+                formData = new FormData();
+                var blobfile = dataURItoBlob(imgURI);
+                console.log(imgURI);
+                console.log(blobfile);
+                formData.append('file', blobfile);
+
+
+                console.log('inputed data');
+                        
+
+                $.ajax({
+                    async: true,
+                    crossDomain: true,
+                    url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-2ebd0e70-e55a-4131-8c4b-500440bfd367",
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    mimeType: "multipart/form-data",
+                    data: formData,
+                    success: function (data) {
+
+                        $('body').prepend('<p>formdata sended</p>');
+
+
+                    },
+                    error: function (request, error) {
+
+
+                        alert(" error: Can't do because: " + request.responseText);
+                       
+                    }
+                });
+
+
+                */
+
+                // Get the form element withot jQuery
+                var form = document.getElementById("myAwesomeForm");
+
+                var ImageURL = "data:image/jpeg;base64," + imageData;
+                // Split the base64 string in data and contentType
+                var block = ImageURL.split(";");
+                // Get the content type of the image
+                var contentType = block[0].split(":")[1]; // In this case "image/gif"
+                // get the real base64 content of the file
+                var realData = block[1].split(",")[1]; // In this case "R0lGODlhPQBEAPeoAJosM...."
+
+                // Convert it to a blob to upload
+                var blob = b64toBlob(realData, contentType);
+
+                // Create a FormData and append the file with "image" as parameter name
+                var formDataToUpload = new FormData(form);
+                formDataToUpload.append("file", blob);
+
+
+                $.ajax({
+                    async: true,
+                    crossDomain: true,
+                    url: "https://on-the-moment-dev.herokuapp.com/external/stories/" + id ,
+                    data: formDataToUpload, // Add as Data the Previously create formData
+                    type: "POST",
+                    contentType: false,
+                    processData: false,
+                    cache: false,
+                    mimeType: "multipart/form-data", // Change this according to your response from the server.
+                    error: function (err) {
+                        console.error(err);
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        console.log("succesfull image sended");
+                    },
+                    complete: function () {
+                        console.log("Request finished.");
+                    }
+                });
+
+                /* test */
+
+
+
+                function b64toBlob(b64Data, contentType, sliceSize) {
+                    contentType = contentType || '';
+                    sliceSize = sliceSize || 512;
+
+                    var byteCharacters = atob(b64Data);
+                    var byteArrays = [];
+
+                    for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+                        var slice = byteCharacters.slice(offset, offset + sliceSize);
+
+                        var byteNumbers = new Array(slice.length);
+                        for (var i = 0; i < slice.length; i++) {
+                            byteNumbers[i] = slice.charCodeAt(i);
+                        }
+
+                        var byteArray = new Uint8Array(byteNumbers);
+
+                        byteArrays.push(byteArray);
+                    }
+
+                    var blob = new Blob(byteArrays, {
+                        type: contentType
+                    });
+                    return blob;
+                }
+
+
+                /*
+                formData = new FormData();
+                var blob = dataURItoBlob(imgURI);
+                formData.append('file', 'img/splashscreen.png');
+
+                $.ajax({
+                    async: true,
+                    crossDomain: true,
+                    url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    mimeType: "multipart/form-data",
+                    data: formData,
+                    success: function (data) {
+                        alert(data);
+                        $('body').prepend('<p>data send succes</p>');
+
+
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert(xhr.status);
+                        alert(thrownError);
+                        $('body').prepend('<p>Error sending data to server</p>');
+                    }
+                });
+                */
+
+
+
+
+                /*
+
+                        var blob = dataURItoBlob(imgURI);
+
+                        var form = new FormData();
+                        form.append("file", imgURI);
+
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
+                            "method": "POST",
+                            "processData": false,
+                            "contentType": false,
+                            "mimeType": "multipart/form-data",
+                            "data": form
+                        }
+
+                        $.ajax(settings).done(function (response) {
+                            console.log(response);
+                            $('body').prepend('<p>succes!</p>');
+                        });
+
+                        $.ajax(settings).error(function (request, status, error) {
+                            alert(request.responseText);
+                            alert(.responseText);
+                            
+                        });
+
+    */
+
+
+
+                /* https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a */
+
+
+            });
+
+
+
+
+
+
+
+
+        },
+        wtf: function (msg) {
+            document.getElementById('msg').textContent = msg;
+        }
+    };
+
+    function dataURItoBlob(dataURI) {
+        // convert base64/URLEncoded data component to raw binary data held in a string
+        var byteString;
+
+        if (dataURI.split(',')[0].indexOf('base64') >= 0)
+            byteString = atob(dataURI.split(',')[1]);
+        else
+            byteString = unescape(dataURI.split(',')[1]);
+
+        // separate out the mime component
+        var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+        // write the bytes of the string to a typed array
+        var ia = new Uint8Array(byteString.length);
+
+        for (var i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+
+        return new Blob([ia], {
+            type: mimeString
+        });
+    }
+
+
+    document.addEventListener('deviceready', app.init);
 
 });

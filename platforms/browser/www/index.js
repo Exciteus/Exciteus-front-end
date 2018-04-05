@@ -60,7 +60,13 @@ $(document).ready(function () {
             $.each(data, function (index, element) {
 
 
-                var time = timeConverter(element.startTime);
+                var time_upper = timeConverter(element.startTime);
+                var time = time_upper.toLowerCase();
+
+                console.log(element.startTime);
+
+
+
                 /*
 
                 nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
@@ -68,9 +74,9 @@ $(document).ready(function () {
 
 
                 if (element.promotion.name != "") {
-                    nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 2px solid #ECD042;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
+                    nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 2px solid #ECD042;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
                 } else {
-                    nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5><span>" + element.promotion.name + "</span></h5></div></div></div>";
+                    nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
                 }
 
 
@@ -101,16 +107,24 @@ $(document).ready(function () {
     });
 
 
+
     function timeConverter(UNIX_timestamp) {
+        str = UNIX_timestamp.toString();
+
+        str = str.slice(0, -3);
+        str = parseInt(str);
+
+
+
         // Months array
-        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var months_arr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 
         // Convert timestamp to milliseconds
-        var date = new Date(UNIX_timestamp * 1000);
+        var date = new Date(str * 1000);
 
         // Year
         var year = date.getFullYear();
-
+       
         // Month
         var month = months_arr[date.getMonth()];
 
@@ -119,21 +133,34 @@ $(document).ready(function () {
 
         // Hours
         var hours = date.getHours();
+        
 
         // Minutes
         var minutes = "0" + date.getMinutes();
 
-
+        
+        
+        
+        
+        var TimeNowMilliSeconds = new Date().getTime();
+        if ((UNIX_timestamp - TimeNowMilliSeconds) < 86400000 ) {
+            var timestr = '    ' + hours.toString() + ':'  + minutes.substr(-2)
+        }
+        else {
+            var timestr = '    ' + day.toString() + '/' + month + /*+ year.toString();*/'  -  ' + hours.toString() + ':'  + minutes.substr(-2)
+        }
 
         // Display date time in MM-dd-yyyy h:m:s format
-        var convdataTime = month + '-' + day + '-' + year + ' ' + hours + ':' + minutes.substr(-2);
-        return convdataTime;
+       /*
+        var convdataTime = month + '-' + day + '-' + year + '  ' + hours + ':' + minutes.substr(-2);
+        var lowercase = convdataTime;
+        */
+        return timestr;
 
     }
 
 
-
-
+    
 
 
 
