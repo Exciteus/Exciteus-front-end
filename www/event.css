@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);
+    background-color: #251B65;
+    /*background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
     height: 100%;
     margin: 0;
     margin-left: 15px;
@@ -21,6 +22,25 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+.header {
+    
+    position: fixed;
+    padding: 0;
+    margin:0;
+    margin-left: -10px;
+    height: 60px;
+    width: 100%;
+    background-color: #251B65;
+    
+    
+    z-index:10;
+    background:inherit;
+    
+}
+#events {
+    margin-top:60px;
+}
+
 /*
 h1 {
     font-size: 1.5em;
@@ -54,28 +74,38 @@ main .icon {
     margin-top: 5px;
     padding-bottom: 20px;
     border-bottom: 2px solid #ECD042;
+    border-radius: 1px;
    
 }
 .event-div {
-     height: auto;
+    margin-top: 10px;
+    
+    
+    height: auto;
     width: 75%;
     float: right;
+    
 }
 h2 {
-    font-size: 2.3em;
+    font-size: 2.4em;
     color: #4DBDD3;
     margin:0;
     padding: 0;
+    font-family: 'BebasNeue-Regular';
  
 }
 h3 {
-    font-size: 0.9em;
+    font-family: 'BebasNeue-Regular';
+    font-size: 1em;
     color: #C6C1D0;
     padding: 0;
+    margin: 0;
+    margin-top: 5px;
 }
 
 h3 span {
     color: #F5C8EA;
+    
 }
 
 .event-div-info {
@@ -87,7 +117,7 @@ h3 span {
     
 }
 h4 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin:0;
     margin-top: 20px;
     padding: 0;
@@ -98,6 +128,7 @@ h4 {
     width: 100%;
     height: 160px;
     border-bottom: 2px solid #ECD042;
+    
 }
 .description-twoo {
     width: 100%;
@@ -121,11 +152,11 @@ h6 {
     font-size: 1.4em;
  
     position: relative;
-    top: 30px;
+    top: 20px;
     color: #ECD042;
 }
 .description-twoo p {
-    color: white;
+    color:#C6C1D0;
     font-size: 1em;
     width: 100%;
     font-family: 'Source Sans Pro';
@@ -207,6 +238,7 @@ video {
 
 }
 #addstory {
+    margin-top: 160px;
     width: 100%;
     height: 40px;
     background-color: #4CBDD4;
@@ -286,7 +318,7 @@ video {
     
 }
 #back-arrow {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 20px;
     left: 20px;
@@ -296,12 +328,42 @@ video {
     outline: 0;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
+    
+        z-index: 998;
+    margin-left: -8px;
 }
 .yellow-circle {
-    margin-left: -5px;
-    width: px;
-    height: 80px;
+    margin-left: -3px;
+    margin-top: 2px;
+    
+    height: 75px;
+    width: 75px;
     position: absolute;
+    overflow: hidden;
     
     
+}
+.icon-small  {
+    font-size: 16px !important;
+}
+.link {
+    color: #C6C1D0;
+    text-decoration: none;
+    
+}
+form {
+    display: none;
+}
+.coverphoto {
+    width: 100;
+    height: 200px;
+    object-fit: cover;
+     border-radius: 1%;
+    
+}
+main {
+    width:100%;
+    
+    z-index:5;
+    overflow:auto;
 }

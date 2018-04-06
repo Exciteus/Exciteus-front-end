@@ -8,7 +8,7 @@ body {
     margin-top: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: /*rgb(65, 32, 155)*/ #271268;
+    background-color: /*rgb(65, 32, 155)*/ #251B65;
     /*
     background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
     height: 100%;
@@ -21,6 +21,14 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     
+}
+.header {
+    position: fixed;
+    padding: 0;
+    margin:0;
+    height: 60px;
+    width: 100%;
+    background-color: #251B65;
 }
 
 h4 {
@@ -51,7 +59,7 @@ h5 {
 
 h1 {
     font-size: 2.3em;
-    margin-top: 0;
+    margin-top: 70px;
     color: #46BDD5;
     font-family: "BebasNeue-Bold";
 }

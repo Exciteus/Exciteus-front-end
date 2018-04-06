@@ -80,14 +80,14 @@ $(document).ready(function () {
 
             if ((data.stories.length) > 0) {
                 storiesAvailable = true;
-                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src='undefined'></section>";
+                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
                 /* story array */
                 var story_url_load_array = data.stories;
             } else {
 
                 storiesAvailable = false;
-                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>DESCRIPTION</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN: " + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START: " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a href=" + data.detailLink + ">more info...</a></p><img src=" + data.coverPhoto + "></section>";
+                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>'" + data.promotion.name + "'</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
             }
 
@@ -97,6 +97,9 @@ $(document).ready(function () {
             setTimeout(function () {
                 $('#preloader').fadeOut('slow', function () {
                     $(this).remove();
+                    $('#back-arrow').click(function () {
+                        window.location.href = 'index.html';
+                    });
                 });
             }, 0);
 
@@ -179,15 +182,22 @@ $(document).ready(function () {
 
     /* unix time to human read time */
     function timeConverter(UNIX_timestamp) {
+        str = UNIX_timestamp.toString();
+
+        str = str.slice(0, -3);
+        str = parseInt(str);
+
+
+
         // Months array
-        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var months_arr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 
         // Convert timestamp to milliseconds
-        var date = new Date(UNIX_timestamp * 1000);
+        var date = new Date(str * 1000);
 
         // Year
         var year = date.getFullYear();
-
+       
         // Month
         var month = months_arr[date.getMonth()];
 
@@ -196,15 +206,26 @@ $(document).ready(function () {
 
         // Hours
         var hours = date.getHours();
+        
 
         // Minutes
         var minutes = "0" + date.getMinutes();
 
-
+        
+        
+        
+        
+        
+       
+            var timestr = '    ' + day.toString() + '/' + month + /*+ year.toString();*/'  -  ' + hours.toString() + ':'  + minutes.substr(-2)
+       
 
         // Display date time in MM-dd-yyyy h:m:s format
-        var convdataTime = month + '-' + day + '-' + year + ' ' + hours + ':' + minutes.substr(-2);
-        return convdataTime;
+       /*
+        var convdataTime = month + '-' + day + '-' + year + '  ' + hours + ':' + minutes.substr(-2);
+        var lowercase = convdataTime;
+        */
+        return timestr;
 
     }
 
@@ -220,8 +241,8 @@ $(document).ready(function () {
 
     function OnlyDateConverter(UNIX_timestamp) {
         // Convert timestamp to milliseconds
-        var date = new Date(UNIX_timestamp * 1000);
-        var months_arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var date = new Date(UNIX_timestamp );
+        var months_arr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
         // Year
         var year = date.getFullYear();
@@ -232,7 +253,7 @@ $(document).ready(function () {
         // Day
         var day = date.getDate();
 
-        var conv = month + '-' + day + '-' + year;
+        var conv = day + ' ' + month +  ' ' + year;
         return conv;
     }
 
@@ -470,8 +491,13 @@ $(document).ready(function () {
 
 
             $('#confirm-image').click(function () {
-                $(this).remove();
-                $('body').prepend('<p>start sending data... </p>');
+                $('#send-image h7').html('Sending data...');
+                
+                
+                
+                
+                
+                
 
                 /*  $('body').prepend('<p>' + imgURI + '</p>');*/
 
@@ -548,6 +574,9 @@ $(document).ready(function () {
                     success: function (data) {
                         console.log(data);
                         console.log("succesfull image sended");
+                        
+                        
+                        $('#confirm-image').remove();
                     },
                     complete: function () {
                         console.log("Request finished.");

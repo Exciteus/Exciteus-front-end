@@ -5,11 +5,19 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+.header {
+    position: fixed;
+    padding: 0;
+    margin:0;
+    height: 60px;
+    width: 100%;
+    background-color: #251B65;
+}
 body {
      overflow-x: hidden;
     overflow-y: scroll;
-    background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);
+   background-color: #251B65;
+  /*  background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
     height: 100%;
     margin: 0;
     margin-left: 15px;
@@ -23,7 +31,7 @@ body {
 }
 h1 {
     font-size: 2.3em;
-    margin-top: 0;
+     margin-top: 70px;
     color: #46BDD5;
     font-family: "BebasNeue-Bold";
     padding-bottom: 50px;
