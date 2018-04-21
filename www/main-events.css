@@ -8,8 +8,8 @@ body {
     margin-top: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-image: url("img/disco-bg-new.png");
-    background-color: /*rgb(65, 32, 155)*/ #251B65;
+    /*background-image: url("img/disco-bg-new.png");*/
+    background-color:#251B65;
     background-size: cover;
     /*
     background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
@@ -57,8 +57,10 @@ body {
 .photo-list {
     margin: 20px;
     margin-left: 0px;
-    width: 130px;
-    border-radius: 2px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-block;
 }
 
 .map {
@@ -92,6 +94,7 @@ body {
 h4 {
     color: #C6C1D1;
     font-weight: 500;
+    display: inline-block;
     -webkit-margin-before: 0em !important;
     -webkit-margin-after: 0em !important;
     -webkit-margin-start: 0px !important;
@@ -164,6 +167,34 @@ main .icon {
     
 }
 
+.event-card {
+    background-color: rgb(58, 31, 102);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.event-card-icon {
+    margin: 10px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.event-card-image {
+    margin-bottom: 10px;
+    margin: 10px;
+    width: 93%;
+    height: auto;
+    max-width:100%;
+    max-height:100%;
+    border-radius: 5px;
+}
+
+.event-card-host {
+    color: rgb(255, 0, 221);
+    font-size: 1.2em;
+}
+
 h2 {
     font-size: 1.2em;
     margin: 0;
@@ -222,6 +253,12 @@ h2 {
     }
   }
 
+h6 {
+    color: white;
+    font-weight: 100;
+    margin: 5px;
+}
+
 .icon {
     padding-right: 5px;
     padding-top: 2px;
@@ -251,3 +288,81 @@ h2 {
 .icon-small  {
     font-size: 14px !important;
 }
+
+.search-icon {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    color: #46BDD5;
+}
+
+.marker {
+    vertical-align: middle;
+    margin-left: 10px;
+    color:lightskyblue;
+}
+
+.toggle-margin {
+    float: right;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid lightskyblue;
+    background-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+    float: right;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
