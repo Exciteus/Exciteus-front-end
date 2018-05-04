@@ -4,8 +4,7 @@
   "displayName": "exciteus",
   "cordova": {
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ],
     "plugins": {
       "cordova-plugin-whitelist": {},
@@ -14,8 +13,8 @@
     }
   },
   "dependencies": {
-    "cordova-ios": "~4.5.4",
-    "cordova-plugin-whitelist": "1",
-    "cordova-android": "~7.0.0"
+    "cordova-android": "~7.0.0",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-whitelist": "1"
   }
 }

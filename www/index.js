@@ -10,18 +10,6 @@ $(document).ready(function () {
     function onDeviceReady() {
         console.log(StatusBar);
     }
-    /*
-    $(".event-item").click(function () {
-
-        console.log("click");
-        window.location.href = "event.html";
-    });
-    $(".event-item-highlight").click(function () {
-
-        console.log("click");
-        window.location.href = "event.html";
-    });
-    */
 
     window.onscroll = function () {
         myFunction()
@@ -47,8 +35,8 @@ $(document).ready(function () {
     console.log("request");
     var htmlstring = "";
     var output = document.getElementById("events");
-
-
+    let max = 0;
+    let recentPicsString ="";
     /* get data with json */
     $.ajax({
         type: 'GET',
@@ -59,34 +47,74 @@ $(document).ready(function () {
         success: function (data) {
             $.each(data, function (index, element) {
 
+                let storiesString ="";
 
-                var time_upper = timeConverter(element.startTime);
-                var time = time_upper.toLowerCase();
+                $.ajax({
+                    type: 'GET',
+                    crossOrigin: true,
+                    url: "https://on-the-moment-dev.herokuapp.com/external/events/" + element.id,
 
-                console.log(element.startTime);
+                    dataType: "json",
+                    success: function (data) {
+
+                        if (data.stories.length > 0 && element.promotion.name !== "" && element.promotion.name !=null) {
+                            storiesString = "<img class='icon stories hasapromo' style='margin-top: 15px;' src='" + element.icon + "' /> "
+                        } else if (data.stories.length > 0 && element.promotion.name === "" || element.promotion.name ==null)
+                        {
+                            storiesString = "<img class='icon stories hasnopromo' style='margin-top: 15px;' src='" + element.icon + "' /> "
+                        } else if (element.promotion.name !== "" || element.promotion.name !=null)
+                        {
+                            storiesString = "<img class='icon hasapromo' style='margin-top: 15px;' src='" + element.icon + "' /> "
+                        } else {
+                            storiesString = "<img class='icon hasnopromo' style='margin-top: 15px;' src='" + element.icon + "' /> "
+                        }
+
+                        nextstring =
+                            "<div>" +
+                            "<div class='event-card' id='" + element.id + "'>" +
+                            storiesString +
+                            "<div class='inline-block main-info'>" +
+                            "<h5>" + element.title + "</h5>" +
+                            "<h4 class='event-card-host'>" + element.place.name + "</h4>" +
+                            /**"<i style='font-size: 15px' class='material-icons inline-block marker'>near_me</i>" +
+                             "<h6 style='margin: 0px' class='inline-block'>3.1KM</h6>" +
+                             "<br>" +*/
+                            "<h2 class='event-item-highlight'>" + element.promotion.name + "</h2></span>" +
+                            "</div>" +
+                            "<img class='event-card-image' src='"+data.coverPhoto+"' />" +
+                            "</div>" +
+                            "</div>";
 
 
+                        htmlstring += nextstring;
+                        output.innerHTML = htmlstring;
 
-                /*
+                        $('.event-card').click(function () {
+                            var myid = $(this).attr("id");
+                            window.location.href = 'event.html?id=' + myid;
 
-                nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
-                */
-
-
-                if (element.promotion.name != "") {
-                    nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 2px solid #ECD042;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.shortName + "</h5></div></div></div>";
-                } else {
-                    nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.shortName + "</h5></div></div></div>";
-                }
+                        });
 
 
+/* code voor die images boven
+                        let container = document.getElementById("photo-container");
 
-                htmlstring += nextstring;
+                        if (data.stories.length > 0 && max < 7) {
+                            for (let x = 0; x < data.stories.length; x++)
+                            {
+                                if (max < 7) {
+                                    recentPicsString = recentPicsString + "<img class='photo-list' src="+data.stories[x]+"/>";
+                                }
+                            }
+                        }
+                        container.innerHTML = recentPicsString;*/
+                    }
+                });
+
             });
-            output.innerHTML = htmlstring;
 
 
-            /* show page content -> stop preloader with 500ms delay! */
+
 
             setTimeout(function () {
                 $('#preloader').fadeOut('slow', function () {
@@ -96,11 +124,17 @@ $(document).ready(function () {
 
 
 
-            $('.event-item').click(function () {
-                var myid = $(this).attr("id");
-                window.location.href = 'event.html?id=' + myid;
 
-            })
+            let intDuration = 5000;
+            setInterval(
+                function(){
+                    $('.event-item-highlight').animate({"font-size": "+=3px"},1000).delay(0)
+                        .animate({"font-size": "-=3px"},1000);
+                },
+                intDuration
+            );
+
+
 
 
         }
@@ -138,10 +172,6 @@ $(document).ready(function () {
         // Minutes
         var minutes = "0" + date.getMinutes();
 
-        
-        
-        
-        
         var TimeNowMilliSeconds = new Date().getTime();
         if ((UNIX_timestamp - TimeNowMilliSeconds) < 86400000 ) {
             var timestr = '    ' + hours.toString() + ':'  + minutes.substr(-2)
@@ -159,47 +189,4 @@ $(document).ready(function () {
 
     }
 
-
-    
-
-
-
-
 });
-
-
-/*
-
-[  
-   {  
-      "id":"evt-c8c1d659-9055-460e-a2d6-93f2d2f71a79",
-      "icon":"https://not-implemented-yet.png",
-      "title":"test-event-1",
-      "place":{  
-         "name":"Alma 2",
-         "address":"Parkstraat"
-      },
-      "promotion":{  
-         "name":""
-      },
-      "category":"TD",
-      "startTime":1522156780138
-   },
-   {  
-      "id":"evt-669d88e4-f180-4399-b78e-9b3f64fefe93",
-      "icon":"https://not-implemented-yet.png",
-      "title":"promotional",
-      "place":{  
-         "name":"Alma 2",
-         "address":"Parkstraat somethign"
-      },
-      "promotion":{  
-         "name":"Gratis bier."
-      },
-      "category":"TD",
-      "startTime":1522157668595
-   }
-]
-
-
-*/

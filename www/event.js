@@ -5,12 +5,9 @@ $(document).ready(function () {
     $("#testform").submit(function (event) {
         alert("Handler for .submit() called.");
         event.preventDefault();
-
-
         formData = new FormData();
         formData.append('file', $('input[type=file]')[0].files[0]);
         console.log('inputed data');
-
 
         $.ajax({
             async: true,
@@ -21,24 +18,19 @@ $(document).ready(function () {
             type: 'POST',
             mimeType: "multipart/form-data",
             data: formData,
+
             success: function (data) {
                 alert(data);
                 $('body').prepend('<p>formdata sended</p>');
                 console.log(data);
-
-
             },
+
             error: function (request, error) {
 
 
                 alert(" error: Can't do because: " + request.responseText);
             }
         });
-
-
-        /* test */
-
-
 
     });
     /* array with preloaded images */
@@ -49,6 +41,7 @@ $(document).ready(function () {
     var output = document.getElementById("events");
     var urll = "https://on-the-moment-dev.herokuapp.com/external/events/" + id;
     console.log(urll);
+
     /*
     var story1;
     var story2;
@@ -77,18 +70,139 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
 
+            let storieString ="";
+            for (let b = 0; b < data.stories.length; b++) {
+                if (b === 0) {
+                    storieString = storieString + "<img class='photo-list' style='margin-left: 0px' src=" + data.stories[b] + " />"
+                } else {
+                    storieString = storieString + "<img class='photo-list' src=" + data.stories[b] + " />"
+                }
+            }
 
-            if ((data.stories.length) > 0) {
+            let moreInfo ="";
+
+            if (data.detailLink !=null){
+                moreInfo = "<p style='margin-top: 15px'><a class='link' href=" + data.detailLink + ">More info...</a></p>"
+            }
+
+            if (data.stories.length > 0 && data.promotion != null && data.promotion !== "") {
                 storiesAvailable = true;
-                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>' + data.promotion.name + '</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
-                /* story array */
+                nextstring = " <div>" +
+                    "            <div>" +
+                    "                <img class='icon stories' src= '" + data.icon + "'/>" +
+                    "                <div class='inline-block main-info'>" +
+                    "                    <h3 class='title-event'>" + data.title + "</h3>" +
+                    "                    <h4 class='inline-block'>@" + data.place.name + "</h4>" +
+                    "                    <h4>" + data.place.address + "</h4>" +
+                    "                </div>" +
+                    "            </div>" +
+                    "            <div id='addstory'>" +
+                    "                <h7>CHECK-IN</h7>" +
+                    "            </div>" +
+                    "            <div>" +
+                    "                <h5 style='margin-bottom: 8px'>DESCRIPTION</h5>" +
+                    "<h4><i class='material-icons icon-small'>date_range</i> WHEN  &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h4>" +
+                    "<h4><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h4>" +
+                    "<h4 class='promo' style='padding-top: 10px'> " + data.promotion.name + "</h4> <hr><section class='description-twoo'><p>" + data.description + "</p>" +
+                    "            </div>" +
+                    "            <div>" +
+                    "                <h5>Pictures</h5>"+
+
+                    "   <div class='photo-container'>" +
+                    storieString +
+                    " </div>   " +
+                    moreInfo +
+                     "                </div>" +
+                    "            </div>" +
+                    "        </div>"
+                    fillPics(data);
                 var story_url_load_array = data.stories;
-            } else {
+            } else if (data.stories.length > 0 && data.promotion == null || data.promotion === "") {
+
+                storiesAvailable = true;
+                nextstring = "<div>" +
+                "            <div>" +
+                "                <img class='icon stories' src= '" + data.icon + "'/>" +
+                "                <div class='inline-block main-info'>" +
+                "                    <h3 class='title-event'>" + data.title + "</h3>" +
+                "                    <h4 class='inline-block'>@" + data.place.name + "</h4>" +
+                "                    <h4>" + data.place.address + "</h4>" +
+                "                </div>" +
+                "            </div>" +
+                "            <div id='addstory'>" +
+                "                <h7>CHECK-IN</h7>" +
+                "            </div>" +
+                "            <div>" +
+                "                <h5 style='margin-bottom: 8px'>DESCRIPTION</h5>" +
+                "<h4><i class='material-icons icon-small'>date_range</i> WHEN  &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h4>" +
+                "<h4 style=''><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h4>" +
+                "<section class='description-twoo'><p>" + data.description + "</p>" +
+                "            </div>" +
+                "            <div>" +
+                "                <h5>Pictures</h5>"+
+
+                "<div class='photo-container'>" +
+                    storieString +
+                   " </div>   " +
+
+                moreInfo +
+                "                </div>" +
+                "            </div>" +
+                "        </div>"
+                fillPics(data);
+            } else  if (data.promotion != null && data.promotion !== ""){
 
                 storiesAvailable = false;
-                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>' + data.promotion.name + '</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                nextstring = "<div>" +
+                    "            <div>" +
+                    "                <img class='icon' src= '" + data.icon + "'/>" +
+                    "                <div class='inline-block main-info'>" +
+                    "                    <h3 class='title-event'>" + data.title + "</h3>" +
+                    "                    <h4 class='inline-block'>@" + data.place.name + "</h4>" +
+                    "                    <h4>" + data.place.address + "</h4>" +
+                    "                </div>" +
+                    "            </div>" +
+                    "            <div id='addstory'>" +
+                    "                <h7>CHECK-IN</h7>" +
+                    "            </div>" +
+                    "            <div>" +
+                    "                <h5 style='margin-bottom: 8px'>DESCRIPTION</h5>" +
+                    "<h4><i class='material-icons icon-small'>date_range</i> WHEN  &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h4>" +
+                    "<h4 style=''><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h4>" +
+                    "<h4 class='promo' style='padding-top: 10px'> " + data.promotion.name + "</h4> <hr><section class='description-twoo'><p>" + data.description + "</p>" +
+                    "            </div>" +
+                    "            <div>" +
+                    moreInfo +
+                "                </div>" +
+                "            </div>" +
+                "        </div>"
 
+            } else {
+                storiesAvailable = false;
+                nextstring = "<div>" +
+                    "            <div>" +
+                    "                <img class='icon' src= '" + data.icon + "'/>" +
+                    "                <div class='inline-block main-info'>" +
+                    "                    <h3 class='title-event'>" + data.title + "</h3>" +
+                    "                    <h4 class='inline-block'>@" + data.place.name + "</h4>" +
+                    "                    <h4>" + data.place.address + "</h4>" +
+                    "                </div>" +
+                    "            </div>" +
+                    "            <div id='addstory'>" +
+                    "                <h7>CHECK-IN</h7>" +
+                    "            </div>" +
+                    "            <div>" +
+                    "                <h5 style='margin-bottom: 8px'>DESCRIPTION</h5>" +
+                    "<h4><i class='material-icons icon-small'>date_range</i> WHEN  &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h4>" +
+                    "<h4 style=''><i class='material-icons icon-small'>access_time</i> START &nbsp " + OnlyTimeConverter(data.startTime) + "</h4>" +
+                    "<section class='description-twoo'><p>" + data.description + "</p>" +
+                    "            </div>" +
+                    "            <div>" +
+                    moreInfo +
+                "                </div>" +
+                "            </div>" +
+                "        </div>"
             }
 
             htmlstring += nextstring;
@@ -103,7 +217,7 @@ $(document).ready(function () {
                 });
             }, 0);
 
-            $(".yellow-circle").click(function () {
+            $(".stories").click(function () {
                 console.log("open stories");
 
                 if (storiesAvailable) {
@@ -211,12 +325,6 @@ $(document).ready(function () {
         // Minutes
         var minutes = "0" + date.getMinutes();
 
-        
-        
-        
-        
-        
-       
             var timestr = '    ' + day.toString() + '/' + month + /*+ year.toString();*/'  -  ' + hours.toString() + ':'  + minutes.substr(-2)
        
 
@@ -269,177 +377,15 @@ $(document).ready(function () {
         });
     }
 
-
-
-    /* example story array 
-    var story_url_load_array = [
-        "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-Image-HD-Vertical-hd-desktop-wallpapers-cool-images-download-apple-background-wallpapers-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
-        "http://thewallpaper.co/wp-content/uploads/2016/10/1080-x-1920-HD-Image-Vertical-cool-images-amazing-hd-download-windows-colourfull-display-lovely-wallpapers-1080x1920-768x1365.jpg",
-        "https://www.pixelstalk.net/wp-content/uploads/2016/08/1080-x-1920-Background-HD-Vertical.jpg",
-        "https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-HD-1080-x-1920-Background-Vertical-PIC-WPD008558.jpg"
-
-    ];
-    */
-
-
-
-
-
-    /* json return
-    
-    {  
-   "icon":"https://not-implemented-yet.png",
-   "title":"test-event-1-long",
-   "description":"Ths is a test event",
-   "place":{  
-      "name":"Alma 2",
-      "address":"Parkstraat"
-   },
-   "stories":{  
-      "images":[  
-
-      ]
-   },
-   "startTime":1522156780138
-}
-
-*/
-
-
-
-
-
-
-
-
-
-    /*
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            // Typical action to be performed when the document is ready:
-            console.log(id);
-            document.getElementById("events").innerHTML = xhttp.responseText;
-
-            // Get the modal
-            var modal = document.getElementById('myModal');
-            var modalinside = document.getElementById('modelinside');
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-
-            // Get the <span> element that closes the modal
-            var span =  document.getElementsByClassName("close")[0];
-
-            // When the user clicks on the button, open the modal 
-
-            $(".icon").click(function () {
-                document.getElementById("modelinside").innerHTML = story1;
-                console.log(story1);
-                modal.style.display = "block";
-                n = n + 1;
-
-
-                xhttp_story2.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                        story2 = xhttp_story2.responseText;
-
-
-
-
-
-
-                        
-                        $("#modelinside").click(function () {
-                            //next
-                            n = n + 1;
-
-                            xhttp_story3.onreadystatechange = function () {
-                                if (this.readyState == 4 && this.status == 200) {
-                                    story3 = xhttp_story3.responseText;
-
-                                }
-
-
-
-                            };
-                            xhttp_story3.open("GET", "http://www.exciteus.live/getstorys.php?id=" + id + "&n=" + n, true);
-                            xhttp_story3.send();
-
-
-
-
-                            
-                            if (clickcounter == 1) {
-                                document.getElementById("modelinside").innerHTML = story2;
-                                console.log(story2);
-                                console.log(clickcounter);
-                                clickcounter++;
-                            } else if (clickcounter == 2) {
-                                document.getElementById("modelinside").innerHTML = story3;
-                                clickcounter++;
-                                console.log(story3);
-                                 console.log(clickcounter);
-                            }
-                            else if (clickcounter == 3) {
-                              modal.style.display = "none";
-                                 console.log(clickcounter);
-                                clickcounter = 1;
-                                
-                                
-                            }
-                        });
-                    }
-
-                };
-                xhttp_story2.open("GET", "http://www.exciteus.live/getstorys.php?id=" + id + "&n=" + n, true);
-                xhttp_story2.send();
-
-
-            });
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-                n = 1;
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modalinside) {
-                    modal.style.display = "none";
-                }
-            }
-
-
-
-
-            xhttp_story.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    story1 = xhttp_story.responseText;
-
-                }
-
-
-
-            };
-            xhttp_story.open("GET", "http://www.exciteus.live/getstorys.php?id=" + id + "&n=" + n, true);
-            xhttp_story.send();
-
-        };
-
-    };
-    xhttp.open("GET", "http://www.exciteus.live/getevent.php?id=" + id, true);
-    xhttp.send();
-
-*/
-
     function gohome() {
         location.href = "index.html"
     }
+
     let app = {
         init: function () {
             document.getElementById('addstory').addEventListener('click', app.takephoto);
         },
+
         takephoto: function () {
             let opts = {
                 quality: 20,
@@ -468,13 +414,6 @@ $(document).ready(function () {
         },
         ftw: function (imageData) {
             $('body').prepend('<div id="preloader"></div>');
-            /*document.getElementById('msg').textContent = imgURI;*/
-
-
-            /* document.getElementById('photo').src = imgURI; 
-            alert('picture taken, ready to send to server');
-                    
-            */
 
             var htmloutput = '<div id="confirm-image"><div id="send-image"><h7>Send image to event storys</h7></div><img id="story-image" src="data:image/jpeg;base64,' + imageData + '"></div>';
             $('body').prepend(htmloutput);
@@ -493,51 +432,7 @@ $(document).ready(function () {
             $('#confirm-image').click(function () {
                 $('#send-image h7').html('Sending data...');
                 
-                
-                
-                
-                
-                
 
-                /*  $('body').prepend('<p>' + imgURI + '</p>');*/
-
-                /*
-
-                formData = new FormData();
-                var blobfile = dataURItoBlob(imgURI);
-                console.log(imgURI);
-                console.log(blobfile);
-                formData.append('file', blobfile);
-
-
-                console.log('inputed data');
-                        
-
-                $.ajax({
-                    async: true,
-                    crossDomain: true,
-                    url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-2ebd0e70-e55a-4131-8c4b-500440bfd367",
-                    processData: false,
-                    contentType: false,
-                    type: 'POST',
-                    mimeType: "multipart/form-data",
-                    data: formData,
-                    success: function (data) {
-
-                        $('body').prepend('<p>formdata sended</p>');
-
-
-                    },
-                    error: function (request, error) {
-
-
-                        alert(" error: Can't do because: " + request.responseText);
-                       
-                    }
-                });
-
-
-                */
 
                 // Get the form element withot jQuery
                 var form = document.getElementById("myAwesomeForm");
@@ -613,74 +508,6 @@ $(document).ready(function () {
                     return blob;
                 }
 
-
-                /*
-                formData = new FormData();
-                var blob = dataURItoBlob(imgURI);
-                formData.append('file', 'img/splashscreen.png');
-
-                $.ajax({
-                    async: true,
-                    crossDomain: true,
-                    url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
-                    processData: false,
-                    contentType: false,
-                    type: 'POST',
-                    mimeType: "multipart/form-data",
-                    data: formData,
-                    success: function (data) {
-                        alert(data);
-                        $('body').prepend('<p>data send succes</p>');
-
-
-                    },
-                    error: function (xhr, ajaxOptions, thrownError) {
-                        alert(xhr.status);
-                        alert(thrownError);
-                        $('body').prepend('<p>Error sending data to server</p>');
-                    }
-                });
-                */
-
-
-
-
-                /*
-
-                        var blob = dataURItoBlob(imgURI);
-
-                        var form = new FormData();
-                        form.append("file", imgURI);
-
-                        var settings = {
-                            "async": true,
-                            "crossDomain": true,
-                            "url": "https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a",
-                            "method": "POST",
-                            "processData": false,
-                            "contentType": false,
-                            "mimeType": "multipart/form-data",
-                            "data": form
-                        }
-
-                        $.ajax(settings).done(function (response) {
-                            console.log(response);
-                            $('body').prepend('<p>succes!</p>');
-                        });
-
-                        $.ajax(settings).error(function (request, status, error) {
-                            alert(request.responseText);
-                            alert(.responseText);
-                            
-                        });
-
-    */
-
-
-
-                /* https://on-the-moment-dev.herokuapp.com/external/stories/evt-6462ccc0-626c-4b58-b966-7b20e70d252a */
-
-
             });
 
 
@@ -718,6 +545,13 @@ $(document).ready(function () {
         return new Blob([ia], {
             type: mimeString
         });
+    }
+
+    function fillPics(x) {
+        for (let i = 0; i > x.stories.length; x++){
+            let inner = "<img class='photo-list' src='img/party-square.jfif' />+";
+            document.getElementById("photo-container").innerHTML = inner;
+        }
     }
 
 

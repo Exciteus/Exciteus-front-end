@@ -1,183 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-
-html {
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-body {
-    background-color: #251B65;
-    /*background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
-    height: 100%;
-    margin: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "BebasNeue-Book";
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-.header {
-    
-    position: fixed;
-    padding: 0;
-    margin:0;
-    margin-left: -10px;
-    height: 60px;
-    width: 100%;
-    background-color: #251B65;
-    
-    
-    z-index:10;
-    background:inherit;
-    
-}
-#events {
-    margin-top:60px;
-}
-
-/*
-h1 {
-    font-size: 1.5em;
-    margin-top: 60px;
-    color: #46BDD5;
-}
-*/
-
 #back-arrow:focus {
     outline:none !important;
 }
 
-.event-item {
-    background-color: #180B3D;
-    width: 100%;
-    height: 80px;
-    margin-top: 10px;
-     
-}
-
-main .icon {
-     height: 70px;
-    width: 70px;
-    margin-top: 5px;
+.icon {
+    margin-top: 2px;
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
     float: left;
-}
-.event-head {
-    
-    width: 100%;
-    height: 80px;
-    margin-top: 5px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ECD042;
-    border-radius: 1px;
-   
-}
-.event-div {
-    margin-top: 10px;
-    
-    
-    height: auto;
-    width: 75%;
-    float: right;
-    
-}
-h2 {
-    font-size: 2.4em;
-    color: #4DBDD3;
-    margin:0;
-    padding: 0;
-    font-family: 'BebasNeue-Regular';
- 
-}
-h3 {
-    font-family: 'BebasNeue-Regular';
-    font-size: 1em;
-    color: #C6C1D0;
-    padding: 0;
-    margin: 0;
-    margin-top: 5px;
+    border-radius: 50%;
 }
 
-h3 span {
-    color: #F5C8EA;
-    
-}
-
-.event-div-info {
-    position: relative;
-    left: 190px;
-    top: -40px;
-    width: 30%;
-    height: 100%;
-    
-}
-h4 {
-    font-size: 1em;
-    margin:0;
-    margin-top: 20px;
-    padding: 0;
-    color: white;
-}
-
-.description-one {
-    width: 100%;
-    height: 160px;
-    border-bottom: 2px solid #ECD042;
-    
-}
-.description-twoo {
-    width: 100%;
-    height: 200px;
-
-    
-}
-h5 {
-    margin: 0;
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #C6C1D1;
-    
-}
-h6 {
-    color: #C6C1D1;
-    margin: 0;
-    padding: 0;
-}
 .promo {
     font-size: 1.4em;
- 
-    position: relative;
-    top: 20px;
     color: #ECD042;
 }
-.description-twoo p {
-    color:#C6C1D0;
-    font-size: 1em;
-    width: 100%;
-    font-family: 'Source Sans Pro';
-}
-.description-twoo img {
-    width: 100%;
-   
-}
-
-.material-icons {
-    vertical-align: middle;
-}
-
-
-.icon-small {
-    font-size: 22px !important;
-}
-
-
-
-
 
 .modal {
     display: none; /* Hidden by default */
@@ -237,26 +76,24 @@ video {
     min-height: 100%;
 
 }
+
 #addstory {
-    margin-top: 160px;
+    margin-top: 15px;
     width: 100%;
-    height: 40px;
-    background-color: #4CBDD4;
+    height: 50px;
+    background-color: rgb(255, 29, 153);
     border-radius: 4px;
     position: relative;
     margin-bottom: 15px;
 }
-#addstory h7 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    color: #ECEAEC;
-    font-size: 1.1em;
-    font-family: "BebasNeue-Book";
-    font-weight: 700;
+
+.coverphoto {
+    margin: 5px 5px 10px;
+    width: 93%;
+    height: auto;
+    max-width:100%;
+    max-height:100%;
+    border-radius: 5px;
 }
 
 /* image story overlay */
@@ -284,22 +121,10 @@ video {
 #send-image {
     height: 50px;
     width: 100%;
-    background-color: #4CBDD4;
+    background-color: rgb(255, 29, 153);
   position: fixed;
   bottom: 0;
     
-}
-#confirm-image h7 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    color: #ECEAEC;
-    font-size: 1.1em;
-    font-family: "BebasNeue-Book";
-    font-weight: 700;
 }
 
 /* preloader */
@@ -317,32 +142,17 @@ video {
     background-size: 90px;
     
 }
-#back-arrow {
-    position: fixed;
-    cursor: pointer;
-    top: 20px;
-    left: 20px;
-    width: 20px;
-    height: 20px;
 
-    outline: 0;
-      -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-tap-highlight-color: transparent; /* For some Androids */
-    
-        z-index: 998;
-    margin-left: -8px;
-}
 .yellow-circle {
-    margin-left: -3px;
-    margin-top: 2px;
-    
-    height: 75px;
-    width: 75px;
-    position: absolute;
-    overflow: hidden;
-    
-    
+   /* border: 2px solid #ECD042;
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+    -moz-transition: border 0.1s linear, box-shadow 0.1s linear;
+    transition: border 0.1s linear, box-shadow 0.1s linear;
+    -webkit-box-shadow: 0 0 5px #ECD042;
+    -moz-box-shadow: 0 0 5px #ECD042;
+    box-shadow: 0 0 5px #ECD042;*/
 }
+
 .icon-small  {
     font-size: 16px !important;
 }
@@ -354,16 +164,343 @@ video {
 form {
     display: none;
 }
-.coverphoto {
-    width: 100;
-    height: 200px;
-    object-fit: cover;
-     border-radius: 1%;
-    
-}
 main {
     width:100%;
     
     z-index:5;
     overflow:auto;
+}
+
+/************************
+*/
+
+
+
+
+
+
+
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    letter-spacing: -0px;
+    margin-top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("img/disco-bg-new.png");
+    background: #1E0F47;
+    background-size: cover;
+/*
+background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
+    height: 100%;
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "BebasNeue-Regular";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+hr {
+    border:none;
+    margin-top: 4px;
+    height: 2px;
+    margin-left: 0;
+    color: #EDD22F;
+    background-color: #EDD22F;
+    width: 90%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+    margin: 0 auto; /* 15% from the top and centered */
+
+
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
+}
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* The Close Button */
+.close {
+    z-index: 9999;
+    /*
+    margin-top: 5px;
+    margin-right: 20px;
+    */
+    position: absolute;
+    top: 3px;
+    right: 10%;
+    color: #4CBDD4;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#back-arrow {
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+
+    z-index: 998;
+    margin-left: -8px;
+}
+
+
+.header {
+    position: fixed;
+    padding: 0;
+    margin:0;
+    height: 60px;
+    width: 100%;
+    background-color: #251B65;
+}
+
+.detail-image {
+    border-radius: 100%;
+    width: 70px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.main-info {
+    vertical-align: top;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.photo-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.photo-list {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+}
+
+.map {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#check-in {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 29, 153);
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 15px;
+}
+h7 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #ECEAEC;
+    font-size: 1.1em;
+    font-family: "BebasNeue-Book";
+    font-weight: 700;
+}
+
+h4 {
+    color: #C6C1D1;
+    font-weight: 500;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 100;
+}
+
+p {
+    color: #C6C1D1;
+    font-size: 1.3em;
+}
+
+h3 {
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+}
+
+.background-nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    color: #180B3D;
+}
+
+h1 {
+    font-size: 2.3em;
+    margin-top: 70px;
+    color: #46BDD5;
+    font-family: "BebasNeue-Regular";
+    font-weight: 500;
+}
+
+.event-item {
+    background-color: rgba(24, 11, 61, 0.3);
+    height: 70px;
+    margin-top: 15px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.event-item-highlight {
+    background-color: #180B3D;
+    height: 68px;
+    margin-top: 15px;
+    border-bottom: 2px solid #ECD042;
+}
+
+
+.event-div {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 30px;
+
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.title-event {
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    display: inline-block;
+}
+
+.event-div-info {
+    position: relative;
+    top: -40px;
+    left: 220px;
+    width: auto;
+}
+
+.event-div-info h5 {
+    /*
+    background-color: rgb(44, 22, 105);
+    border: 5px solid rgb(44, 22, 105);
+
+    border-radius: 2px;
+    */
+    padding-left: 2px;
+    padding-top: 4px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 400px) {
+    .event-div-info {
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .event-div-info {
+        left: 160px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .event-div-info {
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .event-div-info {
+        left: 110px;
+    }
+}
+
+
+
+.icon-small {
+    font-size: 15px !important;
+    vertical-align: middle;
+}
+
+/* preloader */
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    /*background: #1E0F47 url('http://samherbert.net/svg-loaders/svg-loaders/rings.svg') no-repeat center center;*/
+    background: #1E0F47 url('img/preloader_edit.svg') no-repeat center center;
+    background-size: 90px;
+
+}
+.icon-small  {
+    font-size: 14px !important;
+}
+
+.stories {
+    border: 2px solid #ECD042;
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+    -moz-transition: border 0.1s linear, box-shadow 0.1s linear;
+    transition: border 0.1s linear, box-shadow 0.1s linear;
+    -webkit-box-shadow: 0 0 5px #ECD042;
+    -moz-box-shadow: 0 0 5px #ECD042;
+    box-shadow: 0 0 5px #ECD042;
 }

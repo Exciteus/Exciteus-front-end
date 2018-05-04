@@ -42,19 +42,17 @@ p {
     color: #F6F6F6;
     font-size: 0.9em;
     font-family: 'Source Sans Pro';
-   
-   
 }
 .icons {
     width: 100%;
     margin-bottom: 5px;
 }
 .insta {
-    width: 48%;
+    width: 35%;
     height: 100%;
 }
 .fb {
-     width: 48%;
+     width: 35%;
     height: 100%;
     float: right;
 }
