@@ -2,1166 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ada02dad-75ba-4c80-bdeb-7539a2a625c6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.ratignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/NOTICE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/RELEASENOTES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/appium-tests/android/android.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/appium-tests/helpers/cameraHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/appium-tests/ios/ios.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/de/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/de/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/es/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/es/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/fr/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/fr/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/android-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/android-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/blackberry-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/blackberry-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/browser-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/browser-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/firefox-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/firefox-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/fireos-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/fireos-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ios-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ios-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ubuntu-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ubuntu-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/windows-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/windows-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/wp8-fail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/wp8-success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/it/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/it/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ja/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ja/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ko/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ko/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/pl/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/pl/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ru/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/zh/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/zh/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/jsdoc2md/TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/CameraLauncher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/CordovaUri.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/ExifHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/FileHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/xml/provider_paths.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/browser/CameraProxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVCamera.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVCamera.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVExif.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/osx/CDVCamera.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/osx/CDVCamera.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/windows/CameraProxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/xcshareddata/CDVCameraTest.xccheckout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraLibTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/xcshareddata/CDVCameraTest.xccheckout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLib.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLibTests.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/de/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/es/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/fr/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/it/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/ja/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/ko/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/pl/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/zh/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/Camera.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/CameraConstants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/CameraPopoverHandle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/CameraPopoverOptions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/ios/CameraPopoverHandle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/.appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/NOTICE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/RELEASENOTES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/de/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/de/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/es/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/es/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/fr/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/fr/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/it/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/it/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/ja/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/ja/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/ko/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/ko/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/pl/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/pl/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/ru/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/zh/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/doc/zh/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/src/android/StatusBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/src/browser/StatusBarProxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/src/ios/CDVStatusBar.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/src/ios/CDVStatusBar.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/src/windows/StatusBarProxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/src/wp/StatusBar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/tests/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/tests/plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/tests/tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-statusbar/www/statusbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/cordova.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/BuildHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaDialogsHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaCookieManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PermissionHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ResumeCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemCookieManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/android.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/about-the-platform.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/about-the-platform.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/about-us.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/about-us.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/about-us.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/app.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/bebas-neue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova-js-src/android/nativeapiprovider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova-js-src/android/promptbasednativeapi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova-js-src/exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova-js-src/platform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova-js-src/plugin/android/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/dist/css/drawer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/dist/js/drawer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/fixed-navbar-left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/fixed-navbar-right.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/fixed-navbar-top.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/navbar-left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/navbar-right.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/navbar-top.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/right.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/sandbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/sidebar-left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/sidebar-right.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/sandbox/top.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_accessibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_container.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_hamburger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_position-left.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_position-right.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_position-top.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/scss/drawer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/accessibility.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/container.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/drawer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/dropdown.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/hamburger.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/navbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/position-left.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/position-right.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/position-top.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/sidebar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/css/variables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/src/js/drawer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/drawer-master/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/event.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/event.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Book.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Book.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Book.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Book.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Book.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Thin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/fonts/BebasNeue-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/UCLL_LOGO_RGB.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/back-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/preloader_edit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/splashscreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/iscroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/jquery.ajax-cross-origin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plugins/cordova-plugin-statusbar/www/statusbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/testdata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/com/axciteusapp/appreleaseone/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/splashscreen/SplashScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/statusbar/StatusBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/whitelist/WhitelistPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/drawable-mdpi/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/mipmap-mdpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/provider_paths.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/Api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/android_sdk_version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/android_sdk_version.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/build.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/check_reqs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/check_reqs.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/clean" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/clean.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/defaults.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/Adb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/AndroidManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/AndroidProject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/AndroidStudio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/android_sdk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/builders/GenericBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/builders/GradleBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/builders/StudioBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/builders/builders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/device.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/getASPath.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/plugin-build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/pluginHandlers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/prepare.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/retry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/run.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/log.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/loggingHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/.bin/nopt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/.bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/.bin/shjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/abbrev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/android-versions/.jshintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/android-versions/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/android-versions/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/android-versions/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/android-versions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/android-versions/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/beep/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/clear/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/cursorPosition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/progress/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/lib/ansi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/lib/newlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/LICENSE.MIT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/bench/bench.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/lib/b64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/test/convert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/test/url-safe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/BigInteger.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/BigInteger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/BigInteger.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/bplistParser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/airplay.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/iTunes-small.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/int64.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/int64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/parseTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/sample1.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/sample2.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/uid.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/utf16.bplist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/utf16_chinese.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/brace-expansion/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/brace-expansion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/brace-expansion/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/README.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/example/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/test/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.jscs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.ratignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/RELEASENOTES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/cordova-common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ActionStack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigChanges.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigFile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigKeeper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/munge-util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigParser/ConfigParser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigParser/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaCheck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaError/CordovaError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaError/CordovaExternalToolErrorContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaLogger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/FileUpdater.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PlatformJson.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PluginInfo/PluginInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PluginInfo/PluginInfoProvider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PluginManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/superspawn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/util/addProperty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/util/plist-helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/util/xml-helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/tests/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/CHANGES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/NOTICE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/elementpath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/elementtree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/errors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/parsers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/parsers/sax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/sprintf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/treebuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/tests/data/xml1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/tests/data/xml2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/tests/test-simple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/glob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/inflight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/inherits.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/inherits_browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/compact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/difference.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/drop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/dropRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/dropRightWhile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/dropWhile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/fill.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/findIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/findLastIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/first.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/flatten.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/flattenDeep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/head.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/indexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/initial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/intersection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/last.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/lastIndexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/pull.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/pullAt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/remove.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/rest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/sortedIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/sortedLastIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/tail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/take.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/takeRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/takeRightWhile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/takeWhile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/union.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/uniq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/unique.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/unzip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/unzipWith.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/without.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/xor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/zip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/zipObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/zipWith.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/chain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/commit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/concat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/lodash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/plant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/reverse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/run.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/tap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/thru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/toJSON.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/toString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/value.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/valueOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperChain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperCommit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperConcat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperPlant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperReverse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperToString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperValue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/any.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/at.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/collect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/contains.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/countBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/detect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/each.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/eachRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/every.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/findLast.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/findWhere.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/foldl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/foldr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/forEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/forEachRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/groupBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/include.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/includes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/indexBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/inject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/invoke.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/max.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/partition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/pluck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/reduce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/reduceRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/reject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/shuffle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/size.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/some.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sortBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sortByAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sortByOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/where.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/date/now.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/after.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/ary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/backflow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/before.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/bind.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/bindAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/bindKey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/compose.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/curry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/curryRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/debounce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/defer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/flowRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/memoize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/modArgs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/negate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/once.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/partial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/partialRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/rearg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/restParam.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/spread.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/throttle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/wrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/LazyWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/LodashWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/MapCache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/SetCache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayConcat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayCopy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayEachRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayEvery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayExtremum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayPush.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayReduce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayReduceRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arraySome.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arraySum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/assignDefaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/assignOwnDefaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/assignWith.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseAssign.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseAt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCallback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseClone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCompareAscending.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCopy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCreate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseDelay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseDifference.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseEachRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseEvery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseExtremum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFill.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFind.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFindIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFlatten.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForOwnRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFunctions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseGet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIndexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsEqual.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsEqualDeep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsFunction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsMatch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseLodash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMatches.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMatchesProperty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMerge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMergeDeep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseProperty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/basePropertyDeep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/basePullAt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseRandom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseReduce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSetData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSlice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSome.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSortBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSortByOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseToString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseUniq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseValues.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseWhile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseWrapperValue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/binaryIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/binaryIndexBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/bindCallback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/bufferClone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/cacheIndexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/cachePush.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/charsLeftIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/charsRightIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/compareAscending.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/compareMultiple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/composeArgs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/composeArgsRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createAggregator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createAssigner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createBaseEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createBaseFor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createBindWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCompounder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCtorWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCurry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createDefaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createExtremum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFind.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFindIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFindKey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFlow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createForEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createForIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createForOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createHybridWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createObjectMapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPadDir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPadding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPartial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPartialWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createReduce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createRound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createSortedIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/deburrLetter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/equalArrays.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/equalByTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/equalObjects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/escapeHtmlChar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/escapeRegExpChar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/escapeStringChar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getFuncName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getLength.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getMatchData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getNative.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/indexOfNaN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/initCloneArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/initCloneByTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/initCloneObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/invokePath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isArrayLike.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isIterateeCall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isKey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isLaziable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isLength.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isObjectLike.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isSpace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isStrictComparable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/lazyClone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/lazyReverse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/lazyValue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapDelete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapGet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapHas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapSet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mergeData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mergeDefaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/metaMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/pickByArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/pickByCallback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reEscape.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reEvaluate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reInterpolate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/realNames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/replaceHolders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/setData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/shimKeys.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/sortedUniq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/toIterable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/toObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/toPath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/trimmedLeftIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/trimmedRightIndex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/unescapeHtmlChar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/wrapperClone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/clone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/cloneDeep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/eq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/gt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/gte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isArguments.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isBoolean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isDate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isEmpty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isEqual.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isFinite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isFunction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isMatch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNaN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNative.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNull.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNumber.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isPlainObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isRegExp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isTypedArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isUndefined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/lte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/toArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/toPlainObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/ceil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/floor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/max.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/round.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/sum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/number.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/number/inRange.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/number/random.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/assign.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/defaultsDeep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/extend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/findKey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/findLastKey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forInRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forOwnRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/functions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/get.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/has.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/invert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/keys.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/keysIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/mapKeys.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/mapValues.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/omit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/pairs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/pick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/set.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/transform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/values.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/valuesIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/camelCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/capitalize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/deburr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/endsWith.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/escape.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/escapeRegExp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/kebabCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/pad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/padLeft.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/padRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/parseInt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/repeat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/snakeCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/startCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/startsWith.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/templateSettings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trimLeft.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trimRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trunc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/unescape.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/words.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/attempt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/callback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/constant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/identity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/iteratee.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/matches.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/matchesProperty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/method.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/methodOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/mixin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/noop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/property.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/propertyOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/times.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/uniqueId.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/minimatch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/bin/nopt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/examples/my-program.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/lib/nopt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/test/basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/once/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/once/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/once/once.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/once/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/osenv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/test/unix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/test/windows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/x.tap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/dist/plist-build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/dist/plist-parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/dist/plist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/examples/browser/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/plist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/README.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/play-ground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/ReadProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/ReadProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/test-cases-copy.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/test-cases.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/q/CHANGES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/q/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/q/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/q/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/q/q.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/q/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/AUTHORS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/big-not-pretty.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/get-products.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/hello-world.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/not-pretty.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/pretty-print.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/shopping.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/strict.dtd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/switch-bench.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/lib/sax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/buffer-overrun.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-chunked.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-end-split.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-fake-end.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-multiple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-23.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-30.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-35.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-47.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-49.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/parser-position.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/self-closing-child-strict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/self-closing-child.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/self-closing-tag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/stray-ending.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/trailing-non-whitespace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/unquoted.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-issue-41.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-rebinding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-strict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-unbound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-xml-default-prefix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-xml-default-redefine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/range.bnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.documentup.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/RELEASE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/bin/shjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/make.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/scripts/generate-docs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/scripts/run-tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/shell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/cat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/cd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/chmod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/cp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/dirs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/echo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/grep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/ln.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/ls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/mkdir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/mv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/popd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/pushd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/pwd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/rm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/sed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/tempdir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/to.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/toEnd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/which.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/underscore-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/underscore-min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/underscore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/lib/unorm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/wrappy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLAttribute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLCData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLComment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDAttList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDEntity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDNotation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDeclaration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDocType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLRaw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLStringifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/__package__.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/changelog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/dom-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/sax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/run.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/version.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/android/nativeapiprovider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/android/promptbasednativeapi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/platform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/plugin/android/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/plugins/cordova-plugin-statusbar/www/statusbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/wrapper.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/android.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/about-the-platform.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/about-the-platform.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/about-the-platform.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/about-the-platform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/detail-event.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/detail-event.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/detail-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/detail-event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/detail-event.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/detail-event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/event.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/event.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/main-events.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-events.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1170,73 +12,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="main-events.css" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/www/main-events.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="340">
-                    <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="detail-event.html" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/www/detail-event.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="552">
-                    <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="70" />
-                    <folding>
-                      <element signature="e#1147#1154#1" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="detail-event.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/www/detail-event.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="269">
-                    <caret line="265" column="32" lean-forward="true" selection-start-line="265" selection-start-column="32" selection-end-line="265" selection-end-column="32" />
-                    <folding>
-                      <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="detail-event.css" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/www/detail-event.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="218">
-                    <caret line="209" column="21" lean-forward="true" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="main-events.html" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/www/main-events.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="613">
-                    <caret line="37" column="74" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="74" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
+            <state relative-caret-position="493">
               <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
             </state>
           </provider>
@@ -1245,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="1088">
               <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
             </state>
           </provider>
@@ -1254,38 +35,26 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="556" column="37" lean-forward="true" selection-start-line="556" selection-start-column="37" selection-end-line="557" selection-end-column="32" />
+            <state relative-caret-position="8007">
+              <caret line="471" column="23" selection-start-line="471" selection-start-column="4" selection-end-line="471" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="934">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1462">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-events.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/main-events.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Exciteus-Terms-of-Service.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Exciteus-Terms-of-Service.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1234" column="15" selection-start-line="1234" selection-start-column="15" selection-end-line="1234" selection-end-column="15" />
+            <state relative-caret-position="519">
+              <caret line="1277" column="46" lean-forward="true" selection-start-line="1277" selection-start-column="46" selection-end-line="1277" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -1293,7 +62,7 @@
       <file leaf-file-name="event.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/event.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="4862">
               <caret line="286" column="14" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="14" />
             </state>
           </provider>
@@ -1302,19 +71,8 @@
       <file leaf-file-name="event.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="5542">
               <caret line="326" selection-start-line="326" selection-end-line="326" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#2;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#2;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1322,7 +80,7 @@
       <file leaf-file-name="about-the-platform.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/about-the-platform.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
+            <state relative-caret-position="731">
               <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
             </state>
           </provider>
@@ -1331,7 +89,7 @@
       <file leaf-file-name="about-the-platform.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/about-the-platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
+            <state relative-caret-position="884">
               <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
             </state>
           </provider>
@@ -1391,8 +149,8 @@
         <option value="$PROJECT_DIR$/www/about-the-platform.html" />
         <option value="$PROJECT_DIR$/www/index.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/index.js" />
         <option value="$PROJECT_DIR$/www/event.js" />
+        <option value="$PROJECT_DIR$/www/index.js" />
       </list>
     </option>
   </component>
@@ -1430,12 +188,6 @@
               <item name="Exciteus-front-end" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exciteus-front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Exciteus-front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exciteus-front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -1477,35 +229,38 @@
       <option name="presentableId" value="Default" />
       <updated>1525329588498</updated>
       <workItem from="1525329589665" duration="41735000" />
+      <workItem from="1525455686557" duration="3657000" />
+      <workItem from="1525656578675" duration="599000" />
+      <workItem from="1525758151160" duration="614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41735000" />
+    <option name="totallyTimeSpent" value="46605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1515,21 +270,201 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8007">
+          <caret line="471" column="23" selection-start-line="471" selection-start-column="4" selection-end-line="471" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="286" column="14" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5542">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/about-the-platform.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/about-the-platform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21590">
+          <caret line="1277" column="46" lean-forward="true" selection-start-line="1277" selection-start-column="46" selection-end-line="1277" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8007">
+          <caret line="471" column="23" lean-forward="true" selection-start-line="471" selection-start-column="4" selection-end-line="471" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="286" column="14" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5542">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/about-the-platform.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/about-the-platform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21590">
+          <caret line="1277" column="46" lean-forward="true" selection-start-line="1277" selection-start-column="46" selection-end-line="1277" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9452">
+          <caret line="556" column="37" lean-forward="true" selection-start-line="556" selection-start-column="37" selection-end-line="557" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20859">
+          <caret line="1234" column="15" selection-start-line="1234" selection-start-column="15" selection-end-line="1234" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="286" column="14" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5542">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/about-the-platform.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/about-the-platform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/browser/www/drawer-master/src/css/sidebar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/Cocktail-icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/disco-bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/disco-bg-new.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/platforms/browser/www/drawer-master/src/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1545,9 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/iscroll.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1562,55 +494,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/detail-event.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="209" column="21" lean-forward="true" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/about-the-platform.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
+        <state relative-caret-position="731">
           <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/about-the-platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
+        <state relative-caret-position="884">
           <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1234" column="15" selection-start-line="1234" selection-start-column="15" selection-end-line="1234" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/main-events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="37" column="74" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/main-events.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/event.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="4862">
           <caret line="286" column="14" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
+        <state relative-caret-position="493">
           <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5542">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8007">
+          <caret line="471" column="23" selection-start-line="471" selection-start-column="4" selection-end-line="471" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Exciteus-Terms-of-Service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="1277" column="46" lean-forward="true" selection-start-line="1277" selection-start-column="46" selection-end-line="1277" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1623,11 +566,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/detail-event.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="4505">
           <caret line="265" column="32" lean-forward="true" selection-start-line="265" selection-start-column="32" selection-end-line="265" selection-end-column="32" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/detail-event.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3553">
+          <caret line="209" column="21" lean-forward="true" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/main-events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="74" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -1635,55 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="70" />
-          <folding>
-            <element signature="e#1147#1154#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="556" column="37" lean-forward="true" selection-start-line="556" selection-start-column="37" selection-end-line="557" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#2;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#2;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="934">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

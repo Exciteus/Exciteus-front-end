@@ -85,7 +85,6 @@ $(document).ready(function () {
                             "</div>" +
                             "</div>";
 
-
                         htmlstring += nextstring;
                         output.innerHTML = htmlstring;
 
