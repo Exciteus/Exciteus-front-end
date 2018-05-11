@@ -15,7 +15,7 @@ $(document).ready(function () {
         $.ajax({
             async: true,
             crossDomain: true,
-            url: "https://on-the-moment-dev.herokuapp.com/external/stories/evt-666b7be3-8010-4a58-8ead-31d995cdac2a",
+            url: "https://excite-us.herokuapp.com/external/stories/"+ id,
             processData: false,
             contentType: false,
             type: 'POST',
@@ -47,7 +47,7 @@ $(document).ready(function () {
     var id = getQueryStringValue('id');
     var htmlstring = "";
     var output = document.getElementById("events");
-    var urll = "https://on-the-moment-dev.herokuapp.com/external/events/" + id;
+    var urll = "https://excite-us.herokuapp.com/external/events/" + id;
     console.log(urll);
     /*
     var story1;
@@ -72,7 +72,7 @@ $(document).ready(function () {
     $.ajax({
         type: 'GET',
         crossOrigin: true,
-        url: "https://on-the-moment-dev.herokuapp.com/external/events/" + id,
+        url: "https://excite-us.herokuapp.com/external/events/" + id,
 
         dataType: "json",
         success: function (data) {
@@ -80,14 +80,15 @@ $(document).ready(function () {
 
             if ((data.stories.length) > 0) {
                 storiesAvailable = true;
-                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>' + data.promotion.name + '</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
                 /* story array */
                 var story_url_load_array = data.stories;
             } else {
 
                 storiesAvailable = false;
-                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>' + data.promotion.name + '</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + ">More info...</a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
             }
 
@@ -476,7 +477,7 @@ $(document).ready(function () {
                     
             */
 
-            var htmloutput = '<div id="confirm-image"><div id="send-image"><h7>Send image to event storys</h7></div><img id="story-image" src="data:image/jpeg;base64,' + imageData + '"></div>';
+            var htmloutput = '<div id="confirm-image"><div id="send-image"><h7>Add story</h7></div><img id="story-image" src="data:image/jpeg;base64,' + imageData + '"></div>';
             $('body').prepend(htmloutput);
 
 
@@ -561,7 +562,7 @@ $(document).ready(function () {
                 $.ajax({
                     async: true,
                     crossDomain: true,
-                    url: "https://on-the-moment-dev.herokuapp.com/external/stories/" + id ,
+                    url: "https://excite-us.herokuapp.com/external/stories/" + id ,
                     data: formDataToUpload, // Add as Data the Previously create formData
                     type: "POST",
                     contentType: false,
@@ -575,8 +576,8 @@ $(document).ready(function () {
                         console.log(data);
                         console.log("succesfull image sended");
                         
+                        location.reload();
                         
-                        $('#confirm-image').remove();
                     },
                     complete: function () {
                         console.log("Request finished.");

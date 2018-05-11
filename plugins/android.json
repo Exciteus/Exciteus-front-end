@@ -18,6 +18,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.axciteusapp.appreleaseone"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.axciteusapp.appreleaseone"
     }
   },
   "dependent_plugins": {}

@@ -39,4 +39,7 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#46BDD5" />
     <preference name="StatusBarStyle" value="lightcontent" />
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
 </widget>
