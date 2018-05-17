@@ -8,13 +8,13 @@ body {
     margin-top: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: /*rgb(65, 32, 155)*/ #251B65;
+    background-color: /*rgb(65, 32, 155)*/ #1D0F48;
     /*
     background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
     height: 100%;
     margin: 0;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "BebasNeue-Regular";
@@ -28,7 +28,8 @@ body {
     margin:0;
     height: 60px;
     width: 100%;
-    background-color: #251B65;
+    background-color: #1D0F48;
+    background-color: #1D0F48;
 }
 
 h4 {
@@ -37,7 +38,7 @@ h4 {
     padding: 0;
     color: #C6C1D1;
     overflow: hidden;
-     font-size: 0.9em;
+     font-size: 1.1em;
     font-weight: 500;
     
 }
@@ -46,8 +47,8 @@ h5 {
     margin: 0;
     padding: 0;
     margin-top: 3px;
-    color: #ECD042;
-    font-size: 0.9em;
+    color: #F71BAD;
+    font-size: 1.1em;
 }
 
 .background-nav {
@@ -66,43 +67,72 @@ h1 {
 
 .event-item {
     background-color: rgba(24, 11, 61, 0.3);
-    height: 70px;
-    margin-top: 15px;
-    position: relative;
-    opacity: 0.9;
+     background-color: rgba(24, 11, 61, 0.3);
+    background-color:RGBA(47, 47, 65, 0.30);
+    
+    margin-top: 25px;
+    margin-bottom: 20px;
+   
+    
+    border: none;
+    border-radius: 7px;
+    border-radius: 7px;
+     
+
+    
 }
 
 .event-item-highlight {
+    
     background-color: #180B3D;
-    height: 68px;
-    margin-top: 15px;
-    border-bottom: 2px solid #ECD042;
+    background-color:RGBA(47, 47, 65, 0.30);
+    
+    
+    margin-top: 35px;
+    /*
+    border-bottom: 2px solid #F71BAD;*/
+    
+    border-top: 2px solid #F71BAD;
+    border:none;
+    border:none;
+  
 }
 
 main .icon {
     height: 55px;
     width: 55px;
-    margin: 5px;
-    float: left;
+   float: left;
 }
 
 .event-div {
     position: relative;
-    top: 20px;
+    top:10px;
+    height: 75px;
+    
+
+    
+    
+    
+    
+    
+}
+.event-item .coverphoto {
     width: 100%;
-    height: 30px;
+    border-radius: 7px;
+    margin-bottom: -3px;
+    max-height: 200px;
     
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 0;
     padding: 0;
     color: white;
 }
 
 h3 {
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #F5C8EA;
     margin: 0;
     padding: 0;
@@ -113,7 +143,7 @@ h3 {
 
 .event-div-info {
     position: relative;
-    top: -40px;
+    top: -43px;
     left: 220px;
     width: auto;
 }
@@ -133,38 +163,65 @@ h3 {
 
 @media screen and (min-width: 400px) {
     .event-div-info {
-        left: 200px;
+        left: 170px;
     }
+    
   }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) { /* iphone */
     .event-div-info {
-        left: 160px;
+        left: 150px;
     }
+    h2 {
+          font-size: 1.3em;
+      }
+   
   }
 
   @media screen and (max-width: 360px) {
     .event-div-info {
-        left: 150px;
+        left: 140px;
+        top: -35px;
     }
+      h2 {
+          font-size: 1.1em;
+      }
+      h3 {
+          font-size: 0.9em;
+      }
+      h4 {
+          font-size: 0.8em;
+      }
+      h5 {
+          font-size: 0.8em;
+      }
   }
 
   @media screen and (max-width: 340px) {
     .event-div-info {
         left: 110px;
     }
+      h2 {
+          font-size: 1em;
+      }
+      h3 {
+          font-size: 0.8em;
+      }
+      h4 {
+          font-size: 0.8em;
+      }
+      h5 {
+          font-size: 0.8em;
+      }
   }
 
 .icon {
-    padding-right: 5px;
+    padding-right: 15px;
     padding-top: 2px;
+    margin-bottom: 10Px;
     
 }
 
-.icon-small {
-    font-size: 15px !important;
-    vertical-align: middle;
-}
 
 /* preloader */
 
@@ -182,5 +239,9 @@ h3 {
     
 }
 .icon-small  {
-    font-size: 14px !important;
+    font-size: 16px !important;
+    vertical-align: middle;
+}
+#myHeader {
+    z-index: 100;
 }

@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    var tempid;
 
     $('.drawer').drawer();
 
@@ -45,7 +46,9 @@ $(document).ready(function () {
 
 
     console.log("request");
+    var cover = "hallo";
     var htmlstring = "";
+    var nextstring;
     var output = document.getElementById("events");
 
 
@@ -53,54 +56,105 @@ $(document).ready(function () {
     $.ajax({
         type: 'GET',
         crossOrigin: true,
-        url: "https://excite-us.herokuapp.com/external/events/upcoming",
+        url: url + "external/events/upcoming",
 
         dataType: "json",
         success: function (data) {
             $.each(data, function (index, element) {
+                $.ajax({
+                    type: 'GET',
+                    crossOrigin: true,
+                    url: url + "external/events/" + element.id,
 
+                    dataType: "json",
+                    success: function (data) {
 
-                var time_upper = timeConverter(element.startTime);
-                var time = time_upper.toLowerCase();
-
-                console.log(element.startTime);
-
-
-
-                /*
-
-                nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
-                */
-
-
-                if (element.promotion.name != "") {
-                    nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 2px solid #ECD042;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
-                } else {
-                    nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
-                }
+                        cover = data.coverPhoto;
+                        console.log(cover);
 
 
 
-                htmlstring += nextstring;
+
+                        var time_upper = timeConverter(element.startTime);
+                        var time = time_upper.toLowerCase();
+
+
+
+                        /*
+
+                        nextstring = "<div class='event-item' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4>" + time + "</h4><h5>" + element.promotion.name + "</h5></div></div></div>";
+                        */
+
+
+
+
+                        tempid = element.id;
+
+                        if (element.promotion.name != "") {
+
+                            nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 2px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + cover + "'></div>";
+                        } else {
+                            nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + cover + "'></div>";
+                        }
+
+
+
+
+
+                        htmlstring += nextstring;
+                        console.log(htmlstring);
+
+                    }
+                });
+
+
+
+
+
+
+
             });
-            output.innerHTML = htmlstring;
+
+
+
+
 
 
             /* show page content -> stop preloader with 500ms delay! */
-
+            setTimeout(function () {
+                //your code to be executed after 1 second
+                output.innerHTML = htmlstring;
+            }, 500);
             setTimeout(function () {
                 $('#preloader').fadeOut('slow', function () {
+                    console.log(cover);
+
                     $(this).remove();
+
+
+                    $('.event-item').click(function () {
+                        console.log("click");
+                        var myid = $(this).attr("id");
+                        var mycategory = $(this).attr("category");
+                        window.location.href = 'event.html?id=' + myid+'&category='+mycategory;
+
+                    });
+                    $('.event-item-highlight').click(function () {
+                        console.log("click");
+                        console.log("click");
+                        var myid = $(this).attr("id");
+                        var mycategory = $(this).attr("category");
+                        window.location.href = 'event.html?id=' + myid+'&category='+mycategory;
+
+                    })
+
+
                 });
             }, 500);
 
 
 
-            $('.event-item').click(function () {
-                var myid = $(this).attr("id");
-                window.location.href = 'event.html?id=' + myid;
 
-            })
 
 
         }
@@ -108,59 +162,91 @@ $(document).ready(function () {
 
 
 
-    function timeConverter(UNIX_timestamp) {
-        str = UNIX_timestamp.toString();
-
-        str = str.slice(0, -3);
-        str = parseInt(str);
 
 
+    function getCoverphotos(id) {
+        var res;
+        $.ajax({
+            type: 'GET',
+            crossOrigin: true,
+            url: url + "external/events/" + id,
 
-        // Months array
-        var months_arr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+            dataType: "json",
+            success: function (data) {
+                console.log('coverphoto succes');
+                console.log(data.coverPhoto);
+                res = data.coverPhoto.toString();
+                cover = res;
+                console.log(cover);
 
-        // Convert timestamp to milliseconds
-        var date = new Date(str * 1000);
 
-        // Year
-        var year = date.getFullYear();
-       
-        // Month
-        var month = months_arr[date.getMonth()];
+            }
+        });
 
-        // Day
-        var day = date.getDate();
 
-        // Hours
-        var hours = date.getHours();
-        
-
-        // Minutes
-        var minutes = "0" + date.getMinutes();
-
-        
-        
-        
-        
-        var TimeNowMilliSeconds = new Date().getTime();
-        if ((UNIX_timestamp - TimeNowMilliSeconds) < 86400000 ) {
-            var timestr = '    ' + hours.toString() + ':'  + minutes.substr(-2)
-        }
-        else {
-            var timestr = '    ' + day.toString() + '/' + month + /*+ year.toString();*/'  -  ' + hours.toString() + ':'  + minutes.substr(-2)
-        }
-
-        // Display date time in MM-dd-yyyy h:m:s format
-       /*
-        var convdataTime = month + '-' + day + '-' + year + '  ' + hours + ':' + minutes.substr(-2);
-        var lowercase = convdataTime;
-        */
-        return timestr;
 
     }
 
 
-    
+
+
+
+    https: //excite-us.herokuapp.com/external/bars/bar-14e414a3-b6e2-44b8-aa88-c73c8ef4be72
+
+
+
+        function timeConverter(UNIX_timestamp) {
+            str = UNIX_timestamp.toString();
+
+            str = str.slice(0, -3);
+            str = parseInt(str);
+
+
+
+            // Months array
+            var months_arr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+
+            // Convert timestamp to milliseconds
+            var date = new Date(str * 1000);
+
+            // Year
+            var year = date.getFullYear();
+
+            // Month
+            var month = months_arr[date.getMonth()];
+
+            // Day
+            var day = date.getDate();
+
+            // Hours
+            var hours = date.getHours();
+
+
+            // Minutes
+            var minutes = "0" + date.getMinutes();
+
+
+
+
+
+            var TimeNowMilliSeconds = new Date().getTime();
+            if ((UNIX_timestamp - TimeNowMilliSeconds) < 86400000) {
+                var timestr = '    ' + hours.toString() + ':' + minutes.substr(-2)
+            } else {
+                var timestr = '    ' + day.toString() + '/' + month + /*+ year.toString();*/ '  -  ' + hours.toString() + ':' + minutes.substr(-2)
+            }
+
+            // Display date time in MM-dd-yyyy h:m:s format
+            /*
+             var convdataTime = month + '-' + day + '-' + year + '  ' + hours + ':' + minutes.substr(-2);
+             var lowercase = convdataTime;
+             */
+            return timestr;
+
+        }
+
+
+
 
 
 

@@ -11,17 +11,17 @@ html {
     margin:0;
     height: 60px;
     width: 100%;
-    background-color: #251B65;
+    background-color: #1D0F48;
 }
 body {
      overflow-x: hidden;
     overflow-y: scroll;
-   background-color: #251B65;
+   background-color: #1D0F48;
   /*  background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
     height: 100%;
     margin: 0;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "BebasNeue-Book";
@@ -35,12 +35,12 @@ h1 {
     color: #46BDD5;
     font-family: "BebasNeue-Bold";
     padding-bottom: 50px;
-    border-bottom: 2px solid #ECD042;
+    border-bottom: 2px solid #F71BAD;
 }
 p {
     width: 100%;
     color: #F6F6F6;
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: 'Source Sans Pro';
    
    
@@ -61,4 +61,5 @@ p {
 .ucll {
     width: 100%;
     height: 100%;
+    background-color: white;
 }
