@@ -61,19 +61,6 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
             $.each(data, function (index, element) {
-                $.ajax({
-                    type: 'GET',
-                    crossOrigin: true,
-                    url: url + "external/events/" + element.id,
-
-                    dataType: "json",
-                    success: function (data) {
-
-                        cover = data.coverPhoto;
-                        console.log(cover);
-
-
-
 
                         var time_upper = timeConverter(element.startTime);
                         var time = time_upper.toLowerCase();
@@ -88,13 +75,30 @@ $(document).ready(function () {
 
 
 
-                        tempid = element.id;
+                        if (element.highlighted == true) {
+                            if (element.category == "CAFE") {
+                                nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 3px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                
+                            }
+                            else {
+                                nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 3px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                
+                            }
 
-                        if (element.promotion.name != "") {
-
-                            nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 2px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + cover + "'></div>";
+                            
                         } else {
-                            nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + cover + "'></div>";
+                            if (element.category == "CAFE") {
+                                nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                
+                            }
+                            else {
+                                nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                
+                            }
+                            
+                            
+                            
+                            
                         }
 
 
@@ -104,8 +108,7 @@ $(document).ready(function () {
                         htmlstring += nextstring;
                         console.log(htmlstring);
 
-                    }
-                });
+                  
 
 
 
@@ -114,20 +117,14 @@ $(document).ready(function () {
 
 
             });
+            output.innerHTML = htmlstring;
 
 
 
 
 
-
-            /* show page content -> stop preloader with 500ms delay! */
-            setTimeout(function () {
-                //your code to be executed after 1 second
-                output.innerHTML = htmlstring;
-            }, 500);
             setTimeout(function () {
                 $('#preloader').fadeOut('slow', function () {
-                    console.log(cover);
 
                     $(this).remove();
 
@@ -150,7 +147,7 @@ $(document).ready(function () {
 
 
                 });
-            }, 500);
+            }, 200);
 
 
 
