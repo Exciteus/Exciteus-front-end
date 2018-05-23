@@ -50,7 +50,7 @@
     
     
     
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="phonegap-version" value="cli-6.0.0" />
     <plugin name="cordova-plugin-camera" source="npm" />
     <preference name="SplashScreen" value="resourcename" />
     <preference name="AutoHideSplashScreen" value="true" />
