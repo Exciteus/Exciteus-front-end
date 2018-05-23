@@ -29,11 +29,22 @@
 
             <icon src="www/img/icons/Icon-60.png"  width="60" height="60" />
             -->
+            
+            
+            
+            
+            <!-- 
             <icon src="www/img/icons/Icon-120.png"  width="120" height="120" />
 
       
             <icon src="www/img/icons/Icon-76.png"  width="76" height="76" />
             <icon src="www/img/icons/Icon-152.png"  width="152" height="152" />
+            -->
+            
+            
+            
+            
+            
              <!--
             <icon src="www/img/icons/Icon-167.png"  width="167" height="167" />
 
@@ -51,7 +62,7 @@
         
 
 
-        <preference name="phonegap-version" value="cli-6.3.0" />
+        <preference name="phonegap-version" value="cli-6.0.0" />
         <plugin name="cordova-plugin-camera" source="npm" />
         <preference name="SplashScreen" value="resourcename" />
         <preference name="AutoHideSplashScreen" value="true" />
