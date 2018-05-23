@@ -18,34 +18,55 @@
         <platform name="android">
             <allow-intent href="market:*" />
         </platform>
+
+        <platform name="ios">
+            <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
+            <icon height="114" platform="ios" src="res/icons/ios/icon@2x.png" width="114" />
+            <icon height="40" platform="ios" src="res/icons/ios/icon-40.png" width="40" />
+            <icon height="80" platform="ios" src="res/icons/ios/icon-40@2x.png" width="80" />
+            <icon height="50" platform="ios" src="res/icons/ios/icon-50.png" width="50" />
+            <icon height="100" platform="ios" src="res/icons/ios/icon-50@2x.png" width="100" />
+            <icon height="60" platform="ios" src="res/icons/ios/icon-60.png" width="60" />
+            <icon height="120" platform="ios" src="res/icons/ios/icon-60@2x.png" width="120" />
+            <icon height="180" platform="ios" src="res/icons/ios/icon-60@3x.png" width="180" />
+            <icon height="72" platform="ios" src="res/icons/ios/icon-72.png" width="72" />
+            <icon height="144" platform="ios" src="res/icons/ios/icon-72@2x.png" width="144" />
+            <icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
+            <icon height="152" platform="ios" src="res/icons/ios/icon-76@2x.png" width="152" />
+            <icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
+            <icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
+            <icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
+        </platform>
+
+        <!-- 
         <platform name="ios">
             <allow-intent href="itms:*" />
-            <allow-intent href="itms-apps:*" />
-            <!-- iPhone 6 / 6+ -->
-            
-            <!-- 
+            <allow-intent href="itms-apps:*" />  -->
+        <!-- iPhone 6 / 6+ -->
+
+        <!-- 
             <icon src="www/img/icons/Icon-180.png"  width="180" height="180" />
 
 
             <icon src="www/img/icons/Icon-60.png"  width="60" height="60" />
             -->
-            
-            
-            
-            
-            <!-- 
+
+
+
+
+        <!-- 
             <icon src="www/img/icons/Icon-120.png"  width="120" height="120" />
 
       
             <icon src="www/img/icons/Icon-76.png"  width="76" height="76" />
             <icon src="www/img/icons/Icon-152.png"  width="152" height="152" />
             -->
-            
-            
-            
-            
-            
-             <!--
+
+
+
+
+
+        <!--
             <icon src="www/img/icons/Icon-167.png"  width="167" height="167" />
 
          
@@ -57,12 +78,16 @@
             <icon src="www/img/icons/Icon-40.png"  width="40" height="40" />
             <icon src="www/img/icons/Icon-80.png"  width="80" height="80" />
             <icon src="www/img/icons/Icon-120.png" width="120" height="120" />
+
+
+
 -->
-        </platform>
-        
+
+        <!-- </platform>-->
 
 
-        <preference name="phonegap-version" value="cli-6.0.0" />
+
+        <preference name="phonegap-version" value="cli-6.1.0" />
         <plugin name="cordova-plugin-camera" source="npm" />
         <preference name="SplashScreen" value="resourcename" />
         <preference name="AutoHideSplashScreen" value="true" />
