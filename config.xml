@@ -14,30 +14,39 @@
         <allow-intent href="sms:*" />
         <allow-intent href="mailto:*" />
         <allow-intent href="geo:*" />
+        <icon src="www/img/icon.png" />
         <platform name="android">
             <allow-intent href="market:*" />
         </platform>
         <platform name="ios">
             <allow-intent href="itms:*" />
             <allow-intent href="itms-apps:*" />
+            <!-- iPhone 6 / 6+ -->
+            <icon src="www/img/icons/Icon-180.png"  width="180" height="180" />
+
+            <!-- iPhone / iPod Touch  -->
+            <icon src="www/img/icons/Icon-60.png"  width="60" height="60" />
             <icon src="www/img/icons/Icon-120.png"  width="120" height="120" />
 
             <!-- iPad -->
             <icon src="www/img/icons/Icon-76.png"  width="76" height="76" />
+            <icon src="www/img/icons/Icon-152.png"  width="152" height="152" />
+            <icon src="www/img/icons/Icon-167.png"  width="167" height="167" />
 
+            <!-- Settings Icon -->
+            <icon src="www/img/icons/Icon-29.png"  width="29" height="29" />
+            <icon src="www/img/icons/Icon-58.png"  width="58" height="58" />
+            <icon src="www/img/icons/Icon-87.png"  width="87" height="87" />
 
-            <icon src="www/img/icons/Icon-152.png" width="152" height="152" />
+            <!-- Spotlight Icon -->
+            <icon src="www/img/icons/Icon-40.png"  width="40" height="40" />
+            <icon src="www/img/icons/Icon-80.png"  width="80" height="80" />
+            <icon src="www/img/icons/Icon-120.png" width="120" height="120" />
         </platform>
-        <icon src="www/img/icon.png" />
+        
 
 
-
-
-
-
-
-
-        <preference name="phonegap-version" value="cli-6.5.0" />
+        <preference name="phonegap-version" value="cli-7.0.1" />
         <plugin name="cordova-plugin-camera" source="npm" />
         <preference name="SplashScreen" value="resourcename" />
         <preference name="AutoHideSplashScreen" value="true" />
