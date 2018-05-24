@@ -19,7 +19,27 @@
             <allow-intent href="market:*" />
         </platform>
 
+
+        <!--
+        <gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription">
+            <string>For uploading receipt images</string>
+        </gap:config-file>
+        <gap:config-file platform="ios" parent="NSCameraUsageDescription">
+        <string>For uploading photo's to the platform</string>
+        </gap:config-file>
+-->
+
         <platform name="ios">
+            <config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
+                <string>For uploading receipt images</string>
+            </config-file>
+            <config-file parent="NSCameraUsageDescription" platform="ios" target="*-Info.plist">
+                <string>For uploading photo's to the platform</string>
+            </config-file>
+
+
+
+
             <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
             <icon height="114" platform="ios" src="res/icons/ios/icon@2x.png" width="114" />
             <icon height="40" platform="ios" src="res/icons/ios/icon-40.png" width="40" />
@@ -87,7 +107,7 @@
 
 
 
-        <preference name="phonegap-version" value="cli-6.1.0" />
+        <preference name="phonegap-version" value="cli-6.5.0" />
         <plugin name="cordova-plugin-camera" source="npm" />
         <preference name="SplashScreen" value="resourcename" />
         <preference name="AutoHideSplashScreen" value="true" />
