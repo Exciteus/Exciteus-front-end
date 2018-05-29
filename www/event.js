@@ -98,8 +98,8 @@ $(document).ready(function () {
 
 
             });
-            
             */
+<<<<<<< HEAD
             var promo = data.promotion.shortName;
             console.log(promo);
             if (!promo || promo == undefined || promo == "" || promo.length == 0 || promo == "GEEN PROMOTIE") {
@@ -107,21 +107,25 @@ $(document).ready(function () {
             }
 
             /* adres short: " /*data.place.name*/
+=======
+
+
+>>>>>>> parent of 131fa8e... Version 1.0.4
 
             if ((data.stories.length) > 0) {
                 storiesAvailable = true;
 
                 if (category.toLowerCase() === "cafe".toLowerCase()) {
                     console.log('cafe');
-                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span></span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><h4 class='promo'>" + promo + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
-                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span></span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h4 class='promo'>" + promo + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
                 } else {
 
-                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span></span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + promo + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
-                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span></span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + promo + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                    nextstring = "<div class='event-head'><img class='yellow-circle' src='img/yellow-circle.svg'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "</span> " + data.place.address + "</h3></div></div><div class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
                 }
                 /* story array */
                 var story_url_load_array = data.stories;
@@ -129,12 +133,12 @@ $(document).ready(function () {
             } else {
                 storiesAvailable = false;
                 if (category.toLowerCase() === "cafe".toLowerCase()) {
-                    nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span><span> " + data.place.address + "</h3></div></div><div  class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h4 class='promo'>" + promo + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                    nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><div  class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
 
 
 
                 } else {
-                    nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span><span> " + data.place.address + "</h3></div></div><div  class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + promo + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
+                    nextstring = "<div class='event-head'><img class='icon' src='" + data.icon + "'><div class='event-div'><h2>" + data.title + "</h2><h3><span>" + data.place.name + "<span> " + data.place.address + "</h3></div></div><div  class='addstory' id='addstory'><h7>CHECK IN AND ADD STORY&nbsp&nbsp<i class='material-icons'>camera_alt</i></h7></div><section class='description-one'><h4>information</h4><h5><i class='material-icons icon-small'>date_range</i> WHEN &nbsp&nbsp&nbsp&nbsp&nbsp" + OnlyDateConverter(data.startTime) + "</h5><h5><i class='material-icons icon-small'>access_time</i> START &nbsp&nbsp&nbsp " + OnlyTimeConverter(data.startTime) + "</h5><h4 class='promo'>" + data.promotion.shortName + "</h4></section><section class='description-twoo'><p>" + data.description + "</p><p><a class='link' href=" + data.detailLink + "></a></p><img class='coverphoto' src=" + data.coverPhoto + "></section>";
                 }
 
             }

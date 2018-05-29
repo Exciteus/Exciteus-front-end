@@ -8,13 +8,12 @@ body {
     margin-top: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-image: url("img/disco-background-login.jpg");
+    background-image: url("img/disco-bg.jpg");
     background-color: /*rgb(65, 32, 155)*/ #1D0F48;
     background-size: cover;
     /*
     background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
     height: 100%;
-    width: 100%;
     margin: 0;
     margin-left: 25px;
     margin-right: 25px;

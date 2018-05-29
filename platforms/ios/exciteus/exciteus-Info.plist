@@ -26,27 +26,18 @@
     <string>????</string>
     <key>CFBundleVersion</key>
     <string>1.0.5</string>
-    <key>LSRequiresIPhoneOS</key>
-    <true/>
-    <key>NSMainNibFile</key>
-    <string/>
-    <key>NSMainNibFile~ipad</key>
-    <string/>
-    <key>UISupportedInterfaceOrientations</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-    <key>UISupportedInterfaceOrientations~ipad</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationPortraitUpsideDown</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-    <key>UIRequiresFullScreen</key>
-    <true/>
+    <key>1.0.0</key>
+    <string>LSRequiresIPhoneOS</string>
+    <key>????</key>
+    <string>CFBundleVersion</string>
+    <key>true</key>
+    <string>NSAppTransportSecurity</string>
+    <key/>
+    <string>UISupportedInterfaceOrientations</string>
+    <key>UIInterfaceOrientationPortrait,UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight</key>
+    <string>UISupportedInterfaceOrientations~ipad</string>
+    <key>UIInterfaceOrientationPortrait,UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationPortraitUpsideDown,UIInterfaceOrientationLandscapeRight</key>
+    <string>UIRequiresFullScreen</string>
     <key>NSAppTransportSecurity</key>
     <dict>
       <key>NSAllowsArbitraryLoads</key>
