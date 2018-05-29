@@ -43,6 +43,7 @@ body {
     position: fixed;
     padding: 0;
     margin:0;
+    
     margin-left: -28px;
     height: 60px;
     width: 100%;
@@ -379,11 +380,12 @@ width: 100%;
 .yellow-circle {
     margin-left: -73px;
     margin-top: 2px;
-    z-index: 50;
+    z-index: 9;
     height: 75px;
     width: 75px;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
+   
     
     
 }

@@ -101,10 +101,10 @@ $(document).ready(function () {
             
             */
             var promo = data.promotion.shortName;
-
-            if (promo.toLowerCase() == "null" || promo.toLowerCase() == "geen promotie") {
-                promo = "";
-            }
+            console.log(promo);
+            if (!promo || promo == undefined || promo == "" || promo.length == 0 || promo == "GEEN PROMOTIE") {
+                    promo = "";
+                }
             
             /* adres short: " /*data.place.name*/  
 

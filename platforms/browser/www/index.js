@@ -66,8 +66,10 @@ $(document).ready(function () {
                 var time = time_upper.toLowerCase();
 
                 var promo = element.promotion.name;
+                console.log(promo);
+                
 
-                if (promo.toLowerCase() == "null" || promo.toLowerCase() == "geen promotie") {
+                if (!promo || promo == undefined || promo == "" || promo.length == 0 || promo == "GEEN PROMOTIE") {
                     promo = "";
                 }
 
